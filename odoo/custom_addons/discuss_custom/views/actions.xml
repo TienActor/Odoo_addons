@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_dropdown_menu" model="ir.actions.client">
+        <field name="name">Discuss Custom</field>
+        <field name="tag">discuss_custom.dropdown_menu</field>
+        <field name="binding_model_id" />
+    </record>
+    <menuitem id="menu_discuss_custom"
+    name="Discuss Custom"
+    action="action_dropdown_menu"
+    groups="discuss_custom.group_discuss_custom_admin"/>
+    <!-- ,discuss_custom.group_discuss_custom_user -->
+</odoo>

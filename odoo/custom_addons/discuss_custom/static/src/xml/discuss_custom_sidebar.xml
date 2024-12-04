@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="discuss_custom.DiscussCustomSidebar" owl="1">
+        <div class="o_Discuss d-flex h-100 flex-grow-1"  style="height: 100vh; width: 100%; overflow: auto;">
+            <div name="root" class="o_DiscussSidebar d-flex flex-column overflow-auto o_Discuss_sidebar flex-shrink-0 h-100 pt-3 border-end bg-light o_tooltip_parent">
+                <div class="d-flex justify-content-center">
+                    <h1 class="p-3 d-flex flex-column overflow-auto">All chat handle</h1>
+                </div>
+
+                <div class="d-flex p-4 justify-content-center">
+                    <div class="field-complete position-relative">
+                        <div class="inputGroup">
+                          <input type="text" name="searchName" id="searchName" placeholder="Search user"
+       t-on-input="onSearchInput" t-ref="searchInput" />
+                            <span class="clear-input" t-on-click="clearSearch">
+                                <i class="fa fa-times" role="img" aria-label="Clear"></i>
+                            </span>
+                        </div>
+                        <ul class="search-results" t-if="state.searchResults.length > 0">
+                            <t t-foreach="state.searchResults" t-as="user" t-key="user.id">
+                                <li t-on-click="() => this.selectSearchedUser(user)">
+                                    <t t-esc="user.name" />
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="channel-list" t-if="state.channels.length > 0">
+                    <h2>Channels</h2>
+                    <ul>
+                        <t t-foreach="state.channels" t-as="channel" t-key="channel.id">
+                            <button t-on-click="() => this.handleChannel(channel)"
+                                class="o_DiscussSidebarCategoryItem btn d-flex align-items-center w-45 px-0 py-2 border-0 rounded-0 fw-normal text-reset o_DiscussSidebarCategory_item bg-100"
+                                t-att-class="{ 'active': state.selectedChannel and state.selectedChannel.id === channel.id }"
+                                t-att-data-channel-id="channel.id"
+                                t-att-data-channel-name="channel.name">
+                                <div class="o_DiscussSidebarCategoryItem_item o_DiscussSidebarCategoryItem_avatar ms-4">
+                                    <div class="o_DiscussSidebarCategoryItem_imageContainer position-relative d-flex">
+                                        <img class="o_DiscussSidebarCategoryItem_image w-100 h-100 rounded-circle"
+                                            alt="Thread Image"
+                                            t-att-src="'/web/image/mail.channel/' + channel.id + '/avatar_128?unique=yourUniqueCode'" />
+                                    </div>
+                                </div>
+                                <span class="o_DiscussSidebarCategoryItem_item o_DiscussSidebarCategoryItem_name ms-3 me-2 text-truncate"
+                                    t-esc="channel.name"></span>
+                            </button>
+                        </t>
+                    </ul>
+                </div>
+
+                <div class="chat-list" t-if="state.directMessages?.length > 0">
+                    <h2>Direct Chats</h2>
+                    <ul>
+                      <t t-foreach="state.directMessages" t-as="dm" t-key="dm.id">
+                        <button t-on-click="() => this.handleChannel(dm)"
+                          class="o_DiscussSidebarCategoryItem btn d-flex align-items-center w-40 px-0 py-2 border-0 rounded-0 fw-normal text-reset o_DiscussSidebarCategory_item bg-100"
+                          t-att-class="{ 'active': state.selectedChannel and state.selectedChannel.id === dm.id }"
+                          t-att-data-channel-id="dm.id"
+                          t-att-data-channel-name="dm.name">
+                          <div
+                            class="o_DiscussSidebarCategoryItem_item o_DiscussSidebarCategoryItem_avatar ms-4">
+                            <div
+                              class="o_DiscussSidebarCategoryItem_imageContainer position-relative d-flex">
+                              <img
+                                class="o_DiscussSidebarCategoryItem_image w-100 h-100 rounded-circle"
+                                alt="Thread Image"
+                                t-att-src="'/web/image/res.partner/' + dm.id + '/avatar_128'" />
+                            </div>
+                          </div>
+                          <span
+                            class="o_DiscussSidebarCategoryItem_item o_DiscussSidebarCategoryItem_name ms-3 me-2 text-truncate"
+                            t-esc="dm.name"></span>
+                        </button>
+                      </t>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Hiển thị tên và mô tả của channel -->
+                <div class="o_Discuss_content d-flex flex-column flex-grow-1 h-100 overflow-auto">
+                  <div
+                    class="o_ThreadView position-relative d-flex flex-column bg-100 o_Discuss_thread"
+                    data-thread-id="1" data-thread-model="mail.channel">
+  
+                    <!-- Thanh topbar của thread -->
+                    <div
+                      class="o_ThreadViewTopbar d-flex flex-shrink-0 w-100 px-3 bg-100 border-bottom">
+                      <div
+                        class="o_ThreadIcon d-flex justify-content-center flex-shrink-0 me-2 align-self-center"
+                        name="root">
+                        <div class="o_ThreadIcon_groupRestrictedChannel fa fa-fw fa-hashtag"
+                          title="Access restricted to group &quot;User types / Internal User&quot;"></div>
+                      </div>
+  
+                      <!-- Phần tiêu đề và mô tả -->
+                      <div
+                        class="o_ThreadViewTopbar_title d-flex flex-grow-1 align-self-center align-items-center">
+                        <div
+                          class="o_ThreadViewTopbar_threadName lead flex-shrink-0 px-1 border text-truncate fw-bold border-light"
+                          title="general">
+                          <t
+                            t-esc="state.selectedChannel ? state.selectedChannel.name : 'Select a channel'" />
+                        </div>
+  
+                        <!-- Mô tả của channel -->
+                        <div
+                          class="o_ThreadViewTopbar_threadDescriptionSeparator flex-shrink-0 mx-2 py-2 border-start"></div>
+                        <div
+                          class="o_ThreadViewTopbar_threadDescription px-1 border text-truncate border-light"
+                          title="General announcements for all employees.">
+                          <t
+                            t-esc="state.selectedChannel ? state.selectedChannel.description : 'No channel selected'" />
+                        </div>
+                      </div>
+  
+                      <!-- Phần nút Show Member List (chỉ để tượng trưng) -->
+                      <div class="o_ThreadViewTopbar_actions d-flex align-items-center ms-1">
+                        <!-- Nt hiển thị/ẩn danh sách thành viên -->
+                        <t t-if="state.isShowMemberList">
+                          <button
+                            class="o_ThreadViewTopbar_hideMemberListButton o_ThreadViewTopbar_button o-isActive btn px-2 border-none rounded shadow-none"
+                            title="Hide Member List"
+                            t-on-click="onClickHideMemberList">
+                            <i class="fa fa-lg fa-users text-700"></i>
+                          </button>
+                        </t>
+                        <t t-else="">
+                          <button
+                            class="o_ThreadViewTopbar_showMemberListButton o_ThreadViewTopbar_button btn px-2 border-none rounded shadow-none"
+                            title="Show Member List"
+                            t-on-click="onClickShowMemberList">
+                            <i class="fa fa-lg fa-users text-700"></i>
+                          </button>
+                        </t>
+                      </div>
+                    </div>
+  
+                    <!-- Tên channel và mô tả  -->
+                    <div class="o_ThreadView_bottomPart d-flex flex-grow-1">
+                      <div class="o_ThreadView_core d-flex flex-column flex-grow-1">
+                        <div
+                          class="o_MessageList bg-view d-flex flex-column overflow-auto pb-4 o_ThreadView_messageList flex-grow-1">
+                          <div class="flex-grow-1"></div>
+                          <t t-if="state.selectedChannel">
+                            <t t-if="state.messages and state.messages?.length > 0">
+                              <!-- Biến để theo dõi tác giả trước đó -->
+  
+                              <t t-foreach="state.messages" t-as="message" t-key="message.id">
+                                <!-- Date separator -->
+                                <t t-if="this.shouldDisplayHeader(message)">
+                                  <div
+                                    class="o_MessageList_separator o_MessageList_separatorDate o_MessageList_item d-flex flex-shrink-0 align-items-center pt-4 pb-0 px-0 fw-bolder">
+                                    <hr
+                                      class="o_MessageList_separatorLine flex-grow-1 w-auto border-top" />
+                                    <span
+                                      class="o_MessageList_separatorLabel o_MessageList_separatorLabelDate px-3">
+                                      <t t-esc="this.formatDate(message.date)" />
+                                    </span>
+                                    <hr
+                                      class="o_MessageList_separatorLine flex-grow-1 w-auto border-top" />
+                                  </div>
+                                </t>
+  
+                                <t t-set="formattedMessage"
+                                  t-value="this.checkFormatMessageBody(message.body, message.author_id[1])" />
+  
+                                <t t-if="this.isNotification(message)">
+                                  <div class="o_NotificationMessageView d-flex justify-content-center">
+                                    <div class="flex-grow-1"></div>
+                                    <div class="text-500 small px-3">
+                                      <t t-esc="formattedMessage.content" />
+                                    </div>
+                                    <div class="flex-grow-1"></div>
+                                  </div>
+                                </t>
+                                <t t-else="">
+                                  <div
+                                    class="o_Message position-relative py-1 o-discussion mt-1 px-3 o_MessageList_item o_MessageList_message">
+                                    <t t-if="message.replyTo">
+                                      <div class="o_Message_inReplyToWrap me-5">
+                                        <small class="o_MessageInReplyToView position-relative d-block text-small mb-1 ps-5">
+                                          <span class="o_MessageInReplyToView_corner position-absolute bottom-0 top-50 pe-4 border-top text-300 o-isLeftAlign border-start ms-n2"></span>
+                                          <span class="o_MessageInReplyToView_wrapOuter d-flex align-items-center text-muted opacity-75 opacity-100-hover cursor-pointer ps-3">
+                                            <img class="o_MessageInReplyToView_avatar me-2 rounded-circle" t-att-src="'/web/image/res.partner/' + message.replyTo.author_id + '/avatar_128'"  />
+                                            <span class="o_MessageInReplyToView_wrapInner overflow-hidden">
+                                              <b class="o_MessageInReplyToView_author">@<t t-esc="message.replyTo.author_name"/></b>
+                                              <span class="o_MessageInReplyToView_body ms-1 text-break"> <t
+                                                t-esc="message.replyTo.formattedBody.content" /></span>
+                                            </span>
+
+                                          </span>
+                                        </small>
+                                      </div>
+                                    </t>
+                                    
+                                    <div class="position-relative d-flex flex-shrink-0">
+                                      <!-- Sidebar (avatar) -->
+                                      <t t-if="this.shouldDisplayAvatar(message)">
+                                        <div class="o_Message_sidebar d-flex flex-shrink-0">
+                                          <div
+                                            class="o_Message_authorAvatarContainer o_Message_sidebarItem position-relative">
+                                            <img
+                                              class="o_Message_authorAvatar w-100 h-100 rounded-circle o_object_fit_cover cursor-pointer o_redirect"
+                                              t-att-src="'/web/image/res.partner/' + message.author_id[0] + '/avatar_128'" />
+                                          </div>
+                                        </div>
+                                      </t>
+                                      <t t-else="">
+                                        <div class="o_Message_sidebar d-flex flex-shrink-0"
+                                          style="width: 36px;"></div>
+  
+                                      </t>
+  
+                                      <!-- Message content -->
+                                      <div class="o_Message_core flex-grow-1">
+                                        <!-- Header -->
+                                        <t t-if="this.shouldDisplayAvatar(message)">
+                                          <div
+                                            class="o_Message_header d-flex flex-wrap align-items-baseline">
+                                            <strong class="o_Message_authorName me-1 text-truncate"
+                                              t-esc="message.author_id[1] || 'Unknown'" />
+                                            <span
+                                              class="o_Message_date o_Message_headerDate text-muted opacity-50 me-2">
+                                              <span> - </span>
+                                              <t t-esc="this.calculateDaysAgo(message.date)" />
+                                            </span>
+                                          </div>
+                                        </t>
+  
+                                        <!-- Message body -->
+                                        <div
+                                          class="o_Message_bubbleWrap position-relative d-flex align-items-start">
+                                          <div class="o_Message_bubble position-relative p-3">
+                                            <div
+                                              class="o_Message_background position-absolute start-0 top-0 w-100 h-100 rounded-end-3 rounded-bottom-3 border border-success bg-success-light opacity-25"></div>
+                                            <div
+                                              class="o_Message_content position-relative text-break">
+                                              <t
+                                                t-esc="this.checkFormatMessageBody(message.body, message.author_id[1]).content" />
+  
+                                            </div>
+  
+                                          </div>
+                                        </div>
+  
+                                        <!-- Attachments -->
+                                        <t
+                                          t-if="message.attachments and message.attachments?.length > 0">
+                                          <div
+                                            class="o_AttachmentList d-flex flex-column mt-1 position-relative">
+                                            <div
+                                              class="o_AttachmentList_partialList d-flex flex-grow-1 flex-wrap mt-1">
+                                              <t t-foreach="message.attachments" t-as="attachment"
+                                                t-key="attachment.id">
+                                                <div
+                                                  class="o_AttachmentList_attachment mw-100 mb-1 me-1">
+                                                  <div
+                                                    class="o_AttachmentCard o-has-card-details d-flex rounded bg-300"
+                                                    role="menu" t-att-title="attachment.name"
+                                                    t-att-data-id="'Attachment_' + attachment.id">
+                                                    <div
+                                                      class="o_AttachmentCard_image o_image flex-shrink-0 m-1"
+                                                      role="menuitem"
+                                                      aria-label="Attachment"
+                                                      t-att-data-mimetype="attachment.mimetype"></div>
+                                                    <div
+                                                      class="o_AttachmentCard_details d-flex justify-content-center flex-column px-1">
+                                                      <div
+                                                        class="o_AttachmentCard_filename text-truncate">
+                                                        <t t-esc="attachment.name" />
+                                                      </div>
+                                                      <small
+                                                        class="o_AttachmentCard_extension text-uppercase">
+                                                        <t
+                                                          t-esc="this.getFileExtension(attachment.name)" />
+                                                      </small>
+                                                    </div>
+                                                    <div
+                                                      class="o_AttachmentCard_aside position-relative rounded-end overflow-hidden">
+                                                      <a
+                                                        t-att-href="'/web/content/ir.attachment/' + attachment.id + '/datas'"
+                                                        download="">
+                                                        <button
+                                                          class="o_AttachmentCard_asideItem btn d-flex justify-content-center align-items-center w-100 h-100 rounded-0 bg-300"
+                                                          title="Download">
+                                                          <i class="fa fa-download" role="img"
+                                                            aria-label="Download"></i>
+                                                        </button>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </t>
+                                            </div>
+                                          </div>
+                                        </t>
+                                      </div>
+  
+  
+                                    </div>
+  
+  
+                                  </div>
+  
+                                </t>
+  
+                                <t t-set="dummy" t-value="this.updatePrevMessage(message)" />
+                              </t>
+                            </t>
+                            <t t-else="">
+                              <div class="text-center py-5">No messages in this channel.</div>
+                            </t>
+                          </t>
+                          <t t-else="">
+                            <div class="text-center py-5">Select a channel to view messages.</div>
+                          </t>
+                        </div>
+                      </div>
+  
+                      <!-- Phần hiển thị danh sách thành viên -->
+                      <t t-if="state.isShowMemberList">
+                        <div
+                          class="o_ChannelMemberList d-flex flex-column overflow-auto bg-light o_ThreadView_channelMemberList flex-shrink-0 border-start">
+                          <h5>Members</h5>
+                          <ul>
+                            <t t-if="state.members?.length > 0">
+                              <t t-foreach="state.members" t-as="member" t-key="member.id">
+                                <div
+                                  class="o_ChannelMember d-flex align-items-center mx-2 p-2 cursor-pointer">
+                                  <div
+                                    class="o_ChannelMember_avatarContainer position-relative flex-shrink-0">
+                                    <img class="o_ChannelMember_avatar rounded-circle w-100 h-100"
+                                      alt="Avatar"
+                                      t-att-src="'/web/image/res.partner/' + member.id + '/avatar_128'" />
+                                  </div>
+                                  <span class="o_ChannelMember_name ms-2 flex-column-1 text-truncate"
+                                    t-esc="member.name" />
+                                </div>
+                              </t>
+                            </t>
+                            <t t-else="">
+                              <li>No members in this group.</li>
+                            </t>
+                          </ul>
+                        </div>
+                      </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

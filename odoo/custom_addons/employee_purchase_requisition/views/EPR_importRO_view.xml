@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_epr_importro_form" model="ir.ui.view">
+        <field name="name">epr.importro.form</field>
+        <field name="model">epr.importro</field>
+        <field name="arch" type="xml">
+                <form string="EPR ImportRO View">
+                    <script>
+                        $(document).ready(function(){
+                        $(".modal-footer").hide();
+                        });
+                    </script>
+                    <sheet>
+                        <div style="text-align:center">
+                            <button string="File Mẫu" name="download_example_file" type="object"/>                        
+                        </div>
+                        <div style="text-align:center">
+                            <field nolabel="1" name="file_data" widget="binary"/>
+                        </div>
+                        <div style="text-align:center">
+                            <button string="Đóng" name="close_modal" type="object"/>
+                        </div>
+                    </sheet>
+                </form>
+        </field>
+    </record>
+</odoo>

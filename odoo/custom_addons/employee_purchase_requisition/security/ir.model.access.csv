@@ -1,0 +1,9 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_employee_purchase_requisition_manager,employee.purchase.requisition,model_employee_purchase_requisition,employee_purchase_requisition.employee_requisition_manager,1,1,0,0
+access_employee_purchase_requisition_requisition_head,employee.purchase.requisition,model_employee_purchase_requisition,employee_purchase_requisition.employee_requisition_head,1,1,0,0
+access_employee_purchase_requisition_user,employee.purchase.requisition,model_employee_purchase_requisition,employee_purchase_requisition.employee_requisition_user,1,1,1,1
+access_requisition_order,employee.purchase.requisition,model_requisition_order,base.group_user,1,1,1,1
+access_bkg_process_epr,bkg.process.epr,model_bkg_process_epr,base.group_user,1,1,1,1
+access_bkg_daily_warning_pr_email,bkg.daily.warning.pr.email,model_bkg_daily_warning_pr_email,base.group_user,1,1,1,1
+access_bkg_edit_pr_wizard,bkg.edit.pr.wizard,model_bkg_edit_pr_wizard,base.group_user,1,1,1,1
+access_epr_importro,epr.importro,model_epr_importro,base.group_user,1,1,1,1

@@ -1,0 +1,139 @@
+
+div.processChart {
+    margin : 10px;
+    padding : 20px;
+  }
+  
+  div.processChart h2 {
+    margin : 0px;
+    font-size : 16px;
+    font-weight: 500;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    overflow-wrap: break-word;
+    width: 100%;
+    /* min-height: 20px; */
+  }
+  button.btn-processchart-set-zoom-in{
+    position: fixed;
+    right: 30px;
+    bottom: 200px;
+    border: 1px black solid;
+    width: 60px;
+    height: 60px;
+  }
+
+  div.processChart p {
+    max-width: 150px;
+    font-size : 12px;
+    white-space: pre-wrap;
+  }
+
+  div.processChart img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+  }
+  
+  div.processChart h2:hover {
+    cursor: text;
+  }
+  
+  div.processChart ul {
+    list-style : none;
+    margin : 4px;
+    padding : 0px;
+    font-size : 0.8em;
+    text-align : left;
+  }
+  
+  div.processChart ul.stack,
+  div.processChart ul.stack ul { text-align : center; }
+  
+  div.processChart table { width : 100%; }
+  
+  div.processChart tr.lines td.line {
+    width : 1px;
+    height : 20px;
+  }
+  
+  div.processChart tr.lines td.top { border-top : 1px dashed black; }
+  
+  div.processChart tr.lines td.left { border-right : 1px dashed black; }
+  
+  div.processChart tr.lines td.right { border-left : 0px dashed black; }
+  
+  div.processChart tr.lines td.half { width : 50%; }
+  
+  div.processChart td {
+    text-align : center;
+    vertical-align : top;
+    padding : 0px 2px;
+  }
+  
+  div.processChart div.bkg-process-node {
+    cursor : default;
+    border : 1px solid #e7e7e7;
+    display : inline-block;
+    padding : 5px;
+    width : 150px;
+    /* height : 80px; */
+    height: auto;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%); /* W3C */
+    line-height : 1.3em;
+    border-radius : 4px;
+    -moz-border-radius : 4px;
+    -webkit-border-radius : 4px;
+    position: relative;
+    box-shadow: 1px 1px 0px #ddd;
+  }
+  
+  .process-add-button,
+  .process-del-button,
+  .process-confirm-del-button {
+    position: absolute;
+    font-size: 12px;
+  }
+  
+  .process-add-button {
+    bottom: 3px;
+    left: 5px;
+    padding-left: 13px;
+    background: url(./add.png) no-repeat 0 3px;
+  }
+  
+  .process-add-button:hover,
+  .process-del-button:hover {
+    background-color: #eef;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .process-del-button {
+    background: url(./delete.png) no-repeat;
+    width: 12px;
+    height: 12px;
+    bottom: 7px;
+    right: 5px;
+  }
+  
+  .process-input { width: 90px; }
+  
+  .process-confirm-del-button { display: none; }
+  div.bkg-process-node > h2{
+    cursor: pointer !important;
+  }
+  h2.bkg-done-status{
+    color: green !important;
+  }
+  h2.bkg-not-done-status{
+    color: red !important;
+  }
+  div.bkg_epr_rorder_tree > table > thead > tr > th[data-name="bkg_rorder_order"]{width: 87px !important;}

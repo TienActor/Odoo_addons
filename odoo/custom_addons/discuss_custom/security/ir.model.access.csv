@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_discuss_custom_admin,discuss_custom access for admin,model_discuss_custom_dropdown_menu,discuss_custom.group_discuss_custom_admin,1,1,1,1

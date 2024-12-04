@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Menu gốc -->
+    <menuitem id="menu_discuss_custom_root"
+              name="Discuss Custom"
+              web_icon="discuss_custom,static/description/icon.png"
+              groups="discuss_custom.group_discuss_custom_admin"   
+              sequence="10"/>
+</odoo>

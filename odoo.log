@@ -1,0 +1,717 @@
+2024-08-26 01:46:45,176 4840 INFO ? odoo: Odoo version 16.0-20240813 
+2024-08-26 01:46:45,176 4840 INFO ? odoo: Using configuration file at C:\Users\TIEN\Odoo\server\odoo.conf 
+2024-08-26 01:46:45,176 4840 INFO ? odoo: addons paths: ['C:\\Users\\TIEN\\Odoo\\server\\odoo\\addons', 'c:\\users\\tien\\odoo\\sessions\\addons\\16.0', 'c:\\users\\tien\\odoo\\server\\odoo\\addons'] 
+2024-08-26 01:46:45,176 4840 INFO ? odoo: database: openpg@localhost:5432 
+2024-08-26 01:46:45,910 4840 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\TIEN\Odoo\thirdparty\wkhtmltopdf.exe 
+2024-08-26 01:46:46,926 4840 INFO ? odoo.service.server: Initiating shutdown 
+2024-08-26 01:46:46,926 4840 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-08-26 01:46:55,990 15396 INFO ? odoo: Odoo version 16.0-20240813 
+2024-08-26 01:46:55,990 15396 INFO ? odoo: Using configuration file at C:\Users\TIEN\Odoo\server\odoo.conf 
+2024-08-26 01:46:55,990 15396 INFO ? odoo: addons paths: ['C:\\Users\\TIEN\\Odoo\\server\\odoo\\addons', 'c:\\users\\tien\\odoo\\sessions\\addons\\16.0', 'c:\\users\\tien\\odoo\\server\\odoo\\addons'] 
+2024-08-26 01:46:55,990 15396 INFO ? odoo: database: openpg@localhost:5432 
+2024-08-26 01:46:56,137 15396 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Users\TIEN\Odoo\thirdparty\wkhtmltopdf.exe 
+2024-08-26 01:46:56,307 15396 INFO ? odoo.service.server: HTTP service (werkzeug) running on Tien-0387737509.home.arpa:8069 
+2024-08-26 01:47:00,367 15396 INFO ? odoo.sql_db: Connection to the database failed 
+2024-08-26 01:47:04,377 15396 INFO ? odoo.sql_db: Connection to the database failed 
+2024-08-26 01:47:08,477 15396 INFO ? odoo.sql_db: Connection to the database failed 
+2024-08-26 01:47:08,821 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:47:08] "POST /web/webclient/version_info HTTP/1.1" 200 - 0 0.000 12.382
+2024-08-26 01:53:25,119 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:25] "GET / HTTP/1.1" 303 - 1 0.000 0.148
+2024-08-26 01:53:25,428 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:25] "GET /web HTTP/1.1" 303 - 2 0.023 0.183
+2024-08-26 01:53:26,186 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/database/selector HTTP/1.1" 200 - 2 0.019 0.715
+2024-08-26 01:53:26,251 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/src/libs/fontawesome/css/font-awesome.css HTTP/1.1" 200 - 1 0.004 0.040
+2024-08-26 01:53:26,894 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/bootstrap/js/dist/dom/selector-engine.js HTTP/1.1" 200 - 1 0.018 0.322
+2024-08-26 01:53:26,898 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/bootstrap/js/dist/dom/data.js HTTP/1.1" 200 - 1 0.020 0.358
+2024-08-26 01:53:26,901 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/bootstrap/js/dist/dom/manipulator.js HTTP/1.1" 200 - 1 0.000 0.378
+2024-08-26 01:53:26,901 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 - 1 0.008 0.373
+2024-08-26 01:53:26,902 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/bootstrap/js/dist/dom/event-handler.js HTTP/1.1" 200 - 1 0.000 0.379
+2024-08-26 01:53:26,936 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:26] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 - 1 0.000 0.416
+2024-08-26 01:53:27,314 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:27] "GET /web/static/lib/bootstrap/js/dist/base-component.js HTTP/1.1" 200 - 1 0.004 0.090
+2024-08-26 01:53:27,319 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:27] "GET /web/static/src/public/database_manager.js HTTP/1.1" 200 - 1 0.004 0.094
+2024-08-26 01:53:27,319 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:27] "GET /web/static/lib/bootstrap/js/dist/modal.js HTTP/1.1" 200 - 1 0.000 0.098
+2024-08-26 01:53:27,664 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:27] "GET /web/static/img/logo2.png HTTP/1.1" 200 - 1 0.003 0.026
+2024-08-26 01:53:28,237 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:53:28] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 1 0.003 0.134
+2024-08-26 01:54:28,086 15396 INFO None odoo.service.db: Create database `Test_module`. 
+2024-08-26 01:54:30,829 15396 INFO Test_module odoo.modules.loading: loading 1 modules... 
+2024-08-26 01:54:30,829 15396 INFO Test_module odoo.modules.loading: Loading module base (1/1) 
+2024-08-26 01:54:30,852 15396 INFO Test_module odoo.modules.registry: module base: creating or updating database tables 
+2024-08-26 01:54:31,296 15396 INFO Test_module odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2024-08-26 01:54:31,296 15396 INFO Test_module odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2024-08-26 01:54:31,296 15396 INFO Test_module odoo.models: Prepare computation of ir.module.module.views_by_module 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.user_id 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.display_name 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.company_registry 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.commercial_company_name 
+2024-08-26 01:54:31,458 15396 INFO Test_module odoo.models: Prepare computation of res.partner.partner_share 
+2024-08-26 01:54:31,512 15396 INFO Test_module odoo.models: Prepare computation of res.currency.decimal_places 
+2024-08-26 01:54:31,540 15396 INFO Test_module odoo.models: Prepare computation of res.company.logo_web 
+2024-08-26 01:54:31,588 15396 INFO Test_module odoo.models: Prepare computation of res.users.signature 
+2024-08-26 01:54:31,588 15396 INFO Test_module odoo.models: Prepare computation of res.users.share 
+2024-08-26 01:54:33,390 15396 INFO Test_module odoo.modules.loading: loading base/data/res_bank.xml 
+2024-08-26 01:54:33,410 15396 INFO Test_module odoo.modules.loading: loading base/data/res.lang.csv 
+2024-08-26 01:54:33,445 15396 INFO Test_module odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-08-26 01:54:33,478 15396 INFO Test_module odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-08-26 01:54:33,524 15396 INFO Test_module odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-08-26 01:54:33,814 15396 INFO Test_module odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-08-26 01:54:33,829 15396 INFO Test_module odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-08-26 01:54:34,940 15396 INFO Test_module odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-08-26 01:54:34,940 15396 INFO Test_module odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-08-26 01:54:35,262 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-08-26 01:54:35,275 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2024-08-26 01:54:35,276 15396 INFO Test_module odoo.modules.loading: loading base/security/base_groups.xml 
+2024-08-26 01:54:35,442 15396 INFO Test_module odoo.modules.loading: loading base/security/base_security.xml 
+2024-08-26 01:54:35,543 15396 INFO Test_module odoo.modules.loading: loading base/views/base_menus.xml 
+2024-08-26 01:54:35,638 15396 INFO Test_module odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-08-26 01:54:35,667 15396 INFO Test_module odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-08-26 01:54:35,679 15396 INFO Test_module odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-08-26 01:54:36,159 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-08-26 01:54:36,281 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2024-08-26 01:54:36,290 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2024-08-26 01:54:36,321 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2024-08-26 01:54:36,354 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2024-08-26 01:54:36,375 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2024-08-26 01:54:36,397 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2024-08-26 01:54:36,419 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_model_views.xml 
+2024-08-26 01:54:36,540 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2024-08-26 01:54:36,564 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2024-08-26 01:54:36,590 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2024-08-26 01:54:36,612 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2024-08-26 01:54:36,634 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2024-08-26 01:54:36,685 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_default_views.xml 
+2024-08-26 01:54:36,708 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2024-08-26 01:54:36,718 15396 INFO Test_module odoo.modules.loading: loading base/report/ir_model_report.xml 
+2024-08-26 01:54:36,727 15396 INFO Test_module odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2024-08-26 01:54:36,737 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2024-08-26 01:54:36,759 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2024-08-26 01:54:36,771 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_module_views.xml 
+2024-08-26 01:54:36,830 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2024-08-26 01:54:36,878 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_module_module.xml 
+2024-08-26 01:54:36,929 15396 INFO Test_module odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2024-08-26 01:54:36,936 15396 INFO Test_module odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2024-08-26 01:54:36,946 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2024-08-26 01:54:36,961 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2024-08-26 01:54:36,976 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2024-08-26 01:54:36,991 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2024-08-26 01:54:37,011 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2024-08-26 01:54:37,021 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2024-08-26 01:54:37,038 15396 INFO Test_module odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2024-08-26 01:54:37,057 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_actions_data.xml 
+2024-08-26 01:54:37,066 15396 INFO Test_module odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2024-08-26 01:54:37,085 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2024-08-26 01:54:37,108 15396 INFO Test_module odoo.modules.loading: loading base/views/res_company_views.xml 
+2024-08-26 01:54:37,133 15396 INFO Test_module odoo.modules.loading: loading base/views/res_lang_views.xml 
+2024-08-26 01:54:37,156 15396 INFO Test_module odoo.modules.loading: loading base/views/res_partner_views.xml 
+2024-08-26 01:54:37,253 15396 INFO Test_module odoo.modules.loading: loading base/views/res_bank_views.xml 
+2024-08-26 01:54:37,282 15396 INFO Test_module odoo.modules.loading: loading base/views/res_country_views.xml 
+2024-08-26 01:54:37,315 15396 INFO Test_module odoo.modules.loading: loading base/views/res_currency_views.xml 
+2024-08-26 01:54:37,347 15396 INFO Test_module odoo.modules.loading: loading base/views/res_users_views.xml 
+2024-08-26 01:54:37,436 15396 INFO Test_module odoo.modules.loading: loading base/views/ir_property_views.xml 
+2024-08-26 01:54:37,462 15396 INFO Test_module odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2024-08-26 01:54:37,472 15396 INFO Test_module odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2024-08-26 01:54:37,491 15396 INFO Test_module odoo.modules.loading: loading base/views/onboarding_views.xml 
+2024-08-26 01:54:37,520 15396 INFO Test_module odoo.modules.loading: loading base/security/ir.model.access.csv 
+2024-08-26 01:54:37,708 15396 INFO Test_module odoo.modules.loading: Module base loaded in 6.88s, 7890 queries (+7890 other) 
+2024-08-26 01:54:37,708 15396 INFO Test_module odoo.modules.loading: 1 modules loaded in 6.88s, 7890 queries (+7890 extra) 
+2024-08-26 01:54:37,737 15396 INFO Test_module odoo.modules.loading: updating modules list 
+2024-08-26 01:54:37,737 15396 INFO Test_module odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-08-26 01:54:38,130 15396 INFO Test_module odoo.modules.loading: loading 8 modules... 
+2024-08-26 01:54:38,130 15396 INFO Test_module odoo.modules.loading: Loading module web (2/8) 
+2024-08-26 01:54:38,153 15396 INFO Test_module odoo.modules.registry: module web: creating or updating database tables 
+2024-08-26 01:54:38,575 15396 INFO Test_module odoo.modules.loading: loading web/security/ir.model.access.csv 
+2024-08-26 01:54:38,594 15396 INFO Test_module odoo.modules.loading: loading web/views/webclient_templates.xml 
+2024-08-26 01:54:38,663 15396 INFO Test_module odoo.modules.loading: loading web/views/report_templates.xml 
+2024-08-26 01:54:38,740 15396 INFO Test_module odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2024-08-26 01:54:38,758 15396 INFO Test_module odoo.modules.loading: loading web/views/speedscope_template.xml 
+2024-08-26 01:54:38,773 15396 INFO Test_module odoo.modules.loading: loading web/views/lazy_assets.xml 
+2024-08-26 01:54:38,783 15396 INFO Test_module odoo.modules.loading: loading web/views/neutralize_views.xml 
+2024-08-26 01:54:38,792 15396 INFO Test_module odoo.modules.loading: loading web/data/ir_attachment.xml 
+2024-08-26 01:54:38,803 15396 INFO Test_module odoo.modules.loading: loading web/data/report_layout.xml 
+2024-08-26 01:54:38,841 15396 INFO Test_module odoo.modules.loading: Module web loaded in 0.71s, 882 queries (+882 other) 
+2024-08-26 01:54:38,841 15396 INFO Test_module odoo.modules.loading: Loading module auth_totp (3/8) 
+2024-08-26 01:54:38,990 15396 INFO Test_module odoo.modules.registry: module auth_totp: creating or updating database tables 
+2024-08-26 01:54:39,047 15396 INFO Test_module odoo.modules.loading: loading auth_totp/security/security.xml 
+2024-08-26 01:54:39,073 15396 INFO Test_module odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2024-08-26 01:54:39,086 15396 INFO Test_module odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2024-08-26 01:54:39,090 15396 INFO Test_module odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2024-08-26 01:54:39,122 15396 INFO Test_module odoo.modules.loading: loading auth_totp/views/templates.xml 
+2024-08-26 01:54:39,133 15396 INFO Test_module odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2024-08-26 01:54:39,152 15396 INFO Test_module odoo.modules.loading: Module auth_totp loaded in 0.31s, 175 queries (+175 other) 
+2024-08-26 01:54:39,152 15396 INFO Test_module odoo.modules.loading: Loading module base_import (4/8) 
+2024-08-26 01:54:39,233 15396 INFO Test_module odoo.modules.registry: module base_import: creating or updating database tables 
+2024-08-26 01:54:39,877 15396 INFO Test_module odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2024-08-26 01:54:39,907 15396 INFO Test_module odoo.modules.loading: Module base_import loaded in 0.75s, 891 queries (+891 other) 
+2024-08-26 01:54:39,907 15396 INFO Test_module odoo.modules.loading: Loading module bus (5/8) 
+2024-08-26 01:54:40,033 15396 INFO Test_module odoo.modules.registry: module bus: creating or updating database tables 
+2024-08-26 01:54:40,107 15396 INFO Test_module odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2024-08-26 01:54:40,126 15396 INFO Test_module odoo.modules.loading: Module bus loaded in 0.22s, 103 queries (+103 other) 
+2024-08-26 01:54:40,126 15396 INFO Test_module odoo.modules.loading: Loading module web_kanban_gauge (6/8) 
+2024-08-26 01:54:40,156 15396 INFO Test_module odoo.modules.loading: Module web_kanban_gauge loaded in 0.03s, 12 queries (+12 other) 
+2024-08-26 01:54:40,156 15396 INFO Test_module odoo.modules.loading: Loading module web_tour (7/8) 
+2024-08-26 01:54:40,194 15396 INFO Test_module odoo.modules.registry: module web_tour: creating or updating database tables 
+2024-08-26 01:54:40,221 15396 INFO Test_module odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2024-08-26 01:54:40,233 15396 INFO Test_module odoo.modules.loading: loading web_tour/security/ir.rule.csv 
+2024-08-26 01:54:40,243 15396 INFO Test_module odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2024-08-26 01:54:40,271 15396 INFO Test_module odoo.modules.loading: Module web_tour loaded in 0.12s, 101 queries (+101 other) 
+2024-08-26 01:54:40,271 15396 INFO Test_module odoo.modules.loading: Loading module web_editor (8/8) 
+2024-08-26 01:54:40,497 15396 INFO Test_module odoo.modules.registry: module web_editor: creating or updating database tables 
+2024-08-26 01:54:40,948 15396 INFO Test_module odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2024-08-26 01:54:40,959 15396 INFO Test_module odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2024-08-26 01:54:40,967 15396 INFO Test_module odoo.modules.loading: loading web_editor/views/editor.xml 
+2024-08-26 01:54:40,991 15396 INFO Test_module odoo.modules.loading: loading web_editor/views/snippets.xml 
+2024-08-26 01:54:41,033 15396 INFO Test_module odoo.modules.loading: Module web_editor loaded in 0.76s, 821 queries (+821 other) 
+2024-08-26 01:54:41,033 15396 INFO Test_module odoo.modules.loading: 8 modules loaded in 2.90s, 2985 queries (+2985 extra) 
+2024-08-26 01:54:41,202 15396 INFO Test_module odoo.modules.loading: Modules loaded. 
+2024-08-26 01:54:41,210 15396 INFO Test_module odoo.modules.registry: Registry loaded in 10.404s 
+2024-08-26 01:54:42,427 15396 INFO Test_module odoo.addons.base.models.res_users: Login successful for db:Test_module login:ntien3162@gmail.com from 127.0.0.1 
+2024-08-26 01:54:42,434 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:42] "POST /web/database/create HTTP/1.1" 303 - 15893 8.268 8.374
+2024-08-26 01:54:42,765 15396 INFO Test_module odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-08-26 01:54:42,923 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:42] "GET /web HTTP/1.1" 303 - 6 0.004 0.176
+2024-08-26 01:54:51,757 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:51] "GET /web/login HTTP/1.1" 200 - 66 0.050 8.716
+2024-08-26 01:54:51,782 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:51] "GET /web/assets/15-d2ee1c8/web.assets_frontend.min.css HTTP/1.1" 200 - 10 0.003 0.013
+2024-08-26 01:54:52,181 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:52] "GET /web/assets/16-48f5008/web.assets_frontend_minimal.min.js HTTP/1.1" 200 - 8 0.008 0.104
+2024-08-26 01:54:52,190 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:52] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.006 0.077
+2024-08-26 01:54:52,853 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:52] "GET /web/assets/17-1961084/web.assets_frontend_lazy.min.js HTTP/1.1" 200 - 8 0.002 0.286
+2024-08-26 01:54:52,971 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:52] "GET /web/webclient/translations/1724637292974 HTTP/1.1" 200 - 6 0.000 0.000
+2024-08-26 01:54:53,322 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:53] "GET /web/webclient/translations/1724637292988 HTTP/1.1" 200 - 6 0.000 0.016
+2024-08-26 01:54:55,796 15396 INFO Test_module odoo.addons.base.models.res_users: Login successful for db:Test_module login:ntien3162@gmail.com from 127.0.0.1 
+2024-08-26 01:54:55,796 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:54:55] "POST /web/login HTTP/1.1" 303 - 29 0.047 0.715
+2024-08-26 01:55:09,354 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web HTTP/1.1" 200 - 94 0.097 13.149
+2024-08-26 01:55:09,392 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web/assets/18-165d4b6/web.assets_common.min.css HTTP/1.1" 200 - 4 0.002 0.013
+2024-08-26 01:55:09,877 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web/assets/19-a9efc8c/web.assets_backend.min.css HTTP/1.1" 200 - 4 0.018 0.171
+2024-08-26 01:55:09,878 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web/webclient/load_menus/3b5665afdb76f0b35edca6c8b7486724a31b5c9e8fd5a2aa71a636993cb1dd9b HTTP/1.1" 200 - 1 0.000 0.192
+2024-08-26 01:55:09,882 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web/webclient/translations/65607f58d5469d51a5b051eb66c57db2c3d405a5?lang=en_US HTTP/1.1" 200 - 3 0.004 0.174
+2024-08-26 01:55:09,905 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:09] "GET /web/assets/22-e7b4137/web.assets_backend_prod_only.min.js HTTP/1.1" 200 - 4 0.006 0.212
+2024-08-26 01:55:10,009 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:10] "GET /web/assets/21-a9efc8c/web.assets_backend.min.js HTTP/1.1" 200 - 4 0.003 0.319
+2024-08-26 01:55:10,154 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:10] "GET /web/assets/20-165d4b6/web.assets_common.min.js HTTP/1.1" 200 - 4 0.006 0.461
+2024-08-26 01:55:10,828 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:10] "POST /web/action/load HTTP/1.1" 200 - 11 0.009 0.046
+2024-08-26 01:55:10,938 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:10] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 9 0.101 0.012
+2024-08-26 01:55:11,038 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 200 - 9 0.049 0.159
+2024-08-26 01:55:11,092 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 43 0.028 0.042
+2024-08-26 01:55:11,171 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "GET /web/image/res.company/1/favicon HTTP/1.1" 200 - 10 0.000 0.017
+2024-08-26 01:55:11,372 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.014
+2024-08-26 01:55:11,392 15396 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-08-26 01:55:11,484 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.080 0.125
+2024-08-26 01:55:11,503 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.001 0.078
+2024-08-26 01:55:11,722 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:11] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.006
+2024-08-26 01:55:24,082 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:24] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 37 0.081 0.019
+2024-08-26 01:55:24,265 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:24] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.017 0.000
+2024-08-26 01:55:25,766 15396 INFO Test_module odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Contacts'] to user ntien3162@gmail.com #2 via 127.0.0.1 
+2024-08-26 01:55:25,766 15396 INFO Test_module odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-08-26 01:55:25,766 15396 INFO Test_module odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Contacts'] to user ntien3162@gmail.com #2 via 127.0.0.1 
+2024-08-26 01:55:25,988 15396 INFO Test_module odoo.modules.loading: loading 1 modules... 
+2024-08-26 01:55:25,995 15396 INFO Test_module odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-08-26 01:55:26,008 15396 INFO Test_module odoo.modules.loading: updating modules list 
+2024-08-26 01:55:26,009 15396 INFO Test_module odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2024-08-26 01:55:26,397 15396 INFO Test_module odoo.modules.loading: loading 8 modules... 
+2024-08-26 01:55:26,397 15396 INFO Test_module odoo.modules.loading: 8 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-08-26 01:55:26,413 15396 INFO Test_module odoo.modules.loading: loading 24 modules... 
+2024-08-26 01:55:26,413 15396 INFO Test_module odoo.modules.loading: Loading module base_setup (5/24) 
+2024-08-26 01:55:26,481 15396 INFO Test_module odoo.modules.registry: module base_setup: creating or updating database tables 
+2024-08-26 01:55:26,544 15396 INFO Test_module odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2024-08-26 01:55:26,546 15396 INFO Test_module odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2024-08-26 01:55:26,593 15396 INFO Test_module odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2024-08-26 01:55:26,627 15396 INFO Test_module odoo.modules.loading: Module base_setup loaded in 0.21s, 153 queries (+153 other) 
+2024-08-26 01:55:26,627 15396 INFO Test_module odoo.modules.loading: Loading module iap (9/24) 
+2024-08-26 01:55:26,706 15396 INFO Test_module odoo.modules.registry: module iap: creating or updating database tables 
+2024-08-26 01:55:26,770 15396 INFO Test_module odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2024-08-26 01:55:26,780 15396 INFO Test_module odoo.modules.loading: loading iap/security/ir_rule.xml 
+2024-08-26 01:55:26,795 15396 INFO Test_module odoo.modules.loading: loading iap/views/iap_views.xml 
+2024-08-26 01:55:26,842 15396 INFO Test_module odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2024-08-26 01:55:26,881 15396 INFO Test_module odoo.modules.loading: Module iap loaded in 0.25s, 145 queries (+145 other) 
+2024-08-26 01:55:26,881 15396 INFO Test_module odoo.modules.loading: Loading module mail (10/24) 
+2024-08-26 01:55:27,616 15396 INFO Test_module odoo.modules.registry: module mail: creating or updating database tables 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.partner_ids 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.template_id 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_type_id 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_date_deadline_range 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_user_id 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.mail_post_method 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_summary 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_date_deadline_range_type 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_user_type 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_user_field_name 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.activity_note 
+2024-08-26 01:55:27,944 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.mail_post_autofollow 
+2024-08-26 01:55:27,991 15396 INFO Test_module odoo.models: Prepare computation of res.partner.email_normalized 
+2024-08-26 01:55:28,006 15396 INFO Test_module odoo.models: Prepare computation of res.users.notification_type 
+2024-08-26 01:55:29,274 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_groups.xml 
+2024-08-26 01:55:29,332 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_blacklist_remove_views.xml 
+2024-08-26 01:55:29,349 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_compose_message_views.xml 
+2024-08-26 01:55:29,365 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_resend_message_views.xml 
+2024-08-26 01:55:29,386 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_template_preview_views.xml 
+2024-08-26 01:55:29,402 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_wizard_invite_views.xml 
+2024-08-26 01:55:29,415 15396 INFO Test_module odoo.modules.loading: loading mail/wizard/mail_template_reset_views.xml 
+2024-08-26 01:55:29,430 15396 INFO Test_module odoo.modules.loading: loading mail/views/fetchmail_views.xml 
+2024-08-26 01:55:29,448 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml 
+2024-08-26 01:55:29,465 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_tracking_views.xml 
+2024-08-26 01:55:29,482 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_notification_views.xml 
+2024-08-26 01:55:29,499 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_message_views.xml 
+2024-08-26 01:55:29,541 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_message_schedule_views.xml 
+2024-08-26 01:55:29,560 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_mail_views.xml 
+2024-08-26 01:55:29,581 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_followers_views.xml 
+2024-08-26 01:55:29,601 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_ice_server_views.xml 
+2024-08-26 01:55:29,615 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_channel_member_views.xml 
+2024-08-26 01:55:29,632 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_channel_rtc_session_views.xml 
+2024-08-26 01:55:29,649 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_link_preview_views.xml 
+2024-08-26 01:55:29,671 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_channel_views.xml 
+2024-08-26 01:55:29,698 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_shortcode_views.xml 
+2024-08-26 01:55:29,716 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_activity_views.xml 
+2024-08-26 01:55:29,769 15396 INFO Test_module odoo.modules.loading: loading mail/views/res_config_settings_views.xml 
+2024-08-26 01:55:29,799 15396 INFO Test_module odoo.modules.loading: loading mail/data/res_partner_data.xml 
+2024-08-26 01:55:29,832 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_message_subtype_data.xml 
+2024-08-26 01:55:29,832 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_templates_chatter.xml 
+2024-08-26 01:55:29,869 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_templates_email_layouts.xml 
+2024-08-26 01:55:29,897 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_templates_mailgateway.xml 
+2024-08-26 01:55:29,911 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_channel_data.xml 
+2024-08-26 01:55:29,932 15396 INFO Test_module odoo.modules.loading: loading mail/data/mail_activity_data.xml 
+2024-08-26 01:55:29,948 15396 INFO Test_module odoo.modules.loading: loading mail/data/ir_cron_data.xml 
+2024-08-26 01:55:29,982 15396 INFO Test_module odoo.modules.loading: loading mail/security/mail_security.xml 
+2024-08-26 01:55:30,082 15396 INFO Test_module odoo.modules.loading: loading mail/security/ir.model.access.csv 
+2024-08-26 01:55:30,132 15396 INFO Test_module odoo.modules.loading: loading mail/views/discuss_public_templates.xml 
+2024-08-26 01:55:30,150 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_alias_views.xml 
+2024-08-26 01:55:30,184 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_gateway_allowed_views.xml 
+2024-08-26 01:55:30,200 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_guest_views.xml 
+2024-08-26 01:55:30,211 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_message_reaction_views.xml 
+2024-08-26 01:55:30,222 15396 INFO Test_module odoo.modules.loading: loading mail/views/res_users_views.xml 
+2024-08-26 01:55:30,242 15396 INFO Test_module odoo.modules.loading: loading mail/views/res_users_settings_views.xml 
+2024-08-26 01:55:30,252 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_template_views.xml 
+2024-08-26 01:55:30,280 15396 INFO Test_module odoo.modules.loading: loading mail/views/ir_actions_server_views.xml 
+2024-08-26 01:55:30,281 15396 INFO Test_module odoo.modules.loading: loading mail/views/ir_model_views.xml 
+2024-08-26 01:55:30,316 15396 INFO Test_module odoo.modules.loading: loading mail/views/res_partner_views.xml 
+2024-08-26 01:55:30,382 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_blacklist_views.xml 
+2024-08-26 01:55:30,401 15396 INFO Test_module odoo.modules.loading: loading mail/views/mail_menus.xml 
+2024-08-26 01:55:30,548 15396 INFO Test_module odoo.modules.loading: Module mail loaded in 3.67s, 3412 queries (+3412 other) 
+2024-08-26 01:55:30,548 15396 INFO Test_module odoo.modules.loading: Loading module auth_signup (12/24) 
+2024-08-26 01:55:30,632 15396 INFO Test_module odoo.modules.registry: module auth_signup: creating or updating database tables 
+2024-08-26 01:55:30,765 15396 INFO Test_module odoo.modules.loading: loading auth_signup/data/ir_config_parameter_data.xml 
+2024-08-26 01:55:30,780 15396 INFO Test_module odoo.modules.loading: loading auth_signup/data/ir_cron_data.xml 
+2024-08-26 01:55:30,782 15396 INFO Test_module odoo.modules.loading: loading auth_signup/data/mail_template_data.xml 
+2024-08-26 01:55:30,815 15396 INFO Test_module odoo.modules.loading: loading auth_signup/views/res_config_settings_views.xml 
+2024-08-26 01:55:30,832 15396 INFO Test_module odoo.modules.loading: loading auth_signup/views/res_users_views.xml 
+2024-08-26 01:55:30,870 15396 INFO Test_module odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml 
+2024-08-26 01:55:30,897 15396 INFO Test_module odoo.modules.loading: loading auth_signup/views/webclient_templates.xml 
+2024-08-26 01:55:30,931 15396 INFO Test_module odoo.modules.loading: Module auth_signup loaded in 0.38s, 191 queries (+191 other) 
+2024-08-26 01:55:30,931 15396 INFO Test_module odoo.modules.loading: Loading module auth_totp_mail (13/24) 
+2024-08-26 01:55:30,979 15396 INFO Test_module odoo.modules.registry: module auth_totp_mail: creating or updating database tables 
+2024-08-26 01:55:30,998 15396 INFO Test_module odoo.modules.loading: loading auth_totp_mail/data/ir_action_data.xml 
+2024-08-26 01:55:31,031 15396 INFO Test_module odoo.modules.loading: loading auth_totp_mail/data/mail_template_data.xml 
+2024-08-26 01:55:31,032 15396 INFO Test_module odoo.modules.loading: loading auth_totp_mail/views/res_users_views.xml 
+2024-08-26 01:55:31,084 15396 INFO Test_module odoo.modules.loading: Module auth_totp_mail loaded in 0.15s, 92 queries (+92 other) 
+2024-08-26 01:55:31,084 15396 INFO Test_module odoo.modules.loading: Loading module base_install_request (14/24) 
+2024-08-26 01:55:31,131 15396 INFO Test_module odoo.modules.registry: module base_install_request: creating or updating database tables 
+2024-08-26 01:55:31,227 15396 INFO Test_module odoo.modules.loading: loading base_install_request/security/ir.model.access.csv 
+2024-08-26 01:55:31,231 15396 INFO Test_module odoo.modules.loading: loading base_install_request/wizard/base_module_install_request_views.xml 
+2024-08-26 01:55:31,260 15396 INFO Test_module odoo.modules.loading: loading base_install_request/data/mail_template_data.xml 
+2024-08-26 01:55:31,272 15396 INFO Test_module odoo.modules.loading: loading base_install_request/data/mail_templates_module_install.xml 
+2024-08-26 01:55:31,282 15396 INFO Test_module odoo.modules.loading: loading base_install_request/views/ir_module_module_views.xml 
+2024-08-26 01:55:31,298 15396 INFO Test_module odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Project', 'Email Marketing', 'Employees', 'Surveys'] to user __system__ #1 via 127.0.0.1 
+2024-08-26 01:55:31,365 15396 INFO Test_module odoo.modules.loading: Module base_install_request loaded in 0.28s, 201 queries (+201 other) 
+2024-08-26 01:55:31,365 15396 INFO Test_module odoo.modules.loading: Loading module contacts (15/24) 
+2024-08-26 01:55:31,398 15396 INFO Test_module odoo.modules.registry: module contacts: creating or updating database tables 
+2024-08-26 01:55:31,425 15396 INFO Test_module odoo.modules.loading: loading contacts/views/contact_views.xml 
+2024-08-26 01:55:31,517 15396 INFO Test_module odoo.modules.loading: Module contacts loaded in 0.15s, 217 queries (+217 other) 
+2024-08-26 01:55:31,517 15396 INFO Test_module odoo.modules.loading: Loading module google_gmail (16/24) 
+2024-08-26 01:55:31,598 15396 INFO Test_module odoo.modules.registry: module google_gmail: creating or updating database tables 
+2024-08-26 01:55:31,655 15396 INFO Test_module odoo.modules.loading: loading google_gmail/views/fetchmail_server_views.xml 
+2024-08-26 01:55:31,676 15396 INFO Test_module odoo.modules.loading: loading google_gmail/views/ir_mail_server_views.xml 
+2024-08-26 01:55:31,682 15396 INFO Test_module odoo.modules.loading: loading google_gmail/views/res_config_settings_views.xml 
+2024-08-26 01:55:31,735 15396 INFO Test_module odoo.modules.loading: Module google_gmail loaded in 0.22s, 122 queries (+122 other) 
+2024-08-26 01:55:31,735 15396 INFO Test_module odoo.modules.loading: Loading module iap_mail (17/24) 
+2024-08-26 01:55:31,782 15396 INFO Test_module odoo.modules.registry: module iap_mail: creating or updating database tables 
+2024-08-26 01:55:31,805 15396 INFO Test_module odoo.modules.loading: loading iap_mail/data/mail_templates.xml 
+2024-08-26 01:55:31,833 15396 INFO Test_module odoo.modules.loading: Module iap_mail loaded in 0.10s, 35 queries (+35 other) 
+2024-08-26 01:55:31,833 15396 INFO Test_module odoo.modules.loading: Loading module mail_bot (18/24) 
+2024-08-26 01:55:31,915 15396 INFO Test_module odoo.modules.registry: module mail_bot: creating or updating database tables 
+2024-08-26 01:55:31,987 15396 INFO Test_module odoo.modules.loading: loading mail_bot/views/res_users_views.xml 
+2024-08-26 01:55:32,015 15396 INFO Test_module odoo.modules.loading: loading mail_bot/data/mailbot_data.xml 
+2024-08-26 01:55:32,039 15396 INFO Test_module odoo.modules.loading: Module mail_bot loaded in 0.21s, 132 queries (+132 other) 
+2024-08-26 01:55:32,039 15396 INFO Test_module odoo.modules.loading: Loading module phone_validation (19/24) 
+2024-08-26 01:55:32,194 15396 INFO Test_module odoo.modules.registry: module phone_validation: creating or updating database tables 
+2024-08-26 01:55:32,319 15396 INFO Test_module odoo.modules.loading: loading phone_validation/security/ir.model.access.csv 
+2024-08-26 01:55:32,330 15396 INFO Test_module odoo.modules.loading: loading phone_validation/views/phone_blacklist_views.xml 
+2024-08-26 01:55:32,361 15396 INFO Test_module odoo.modules.loading: loading phone_validation/wizard/phone_blacklist_remove_view.xml 
+2024-08-26 01:55:32,380 15396 INFO Test_module odoo.modules.loading: Module phone_validation loaded in 0.34s, 162 queries (+162 other) 
+2024-08-26 01:55:32,380 15396 INFO Test_module odoo.modules.loading: Loading module privacy_lookup (20/24) 
+2024-08-26 01:55:32,449 15396 INFO Test_module odoo.modules.registry: module privacy_lookup: creating or updating database tables 
+2024-08-26 01:55:32,565 15396 INFO Test_module odoo.modules.loading: loading privacy_lookup/wizard/privacy_lookup_wizard_views.xml 
+2024-08-26 01:55:32,599 15396 INFO Test_module odoo.modules.loading: loading privacy_lookup/views/privacy_log_views.xml 
+2024-08-26 01:55:32,631 15396 INFO Test_module odoo.modules.loading: loading privacy_lookup/security/ir.model.access.csv 
+2024-08-26 01:55:32,632 15396 INFO Test_module odoo.modules.loading: loading privacy_lookup/data/ir_actions_server_data.xml 
+2024-08-26 01:55:32,672 15396 INFO Test_module odoo.modules.loading: Module privacy_lookup loaded in 0.29s, 225 queries (+225 other) 
+2024-08-26 01:55:32,672 15396 INFO Test_module odoo.modules.loading: Loading module web_unsplash (21/24) 
+2024-08-26 01:55:32,748 15396 INFO Test_module odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2024-08-26 01:55:32,803 15396 INFO Test_module odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2024-08-26 01:55:32,831 15396 INFO Test_module odoo.modules.loading: Module web_unsplash loaded in 0.16s, 95 queries (+95 other) 
+2024-08-26 01:55:32,831 15396 INFO Test_module odoo.modules.loading: Loading module partner_autocomplete (22/24) 
+2024-08-26 01:55:32,949 15396 INFO Test_module odoo.modules.registry: module partner_autocomplete: creating or updating database tables 
+2024-08-26 01:55:33,032 15396 INFO Test_module odoo.modules.loading: loading partner_autocomplete/security/ir.model.access.csv 
+2024-08-26 01:55:33,052 15396 INFO Test_module odoo.modules.loading: loading partner_autocomplete/views/res_partner_views.xml 
+2024-08-26 01:55:33,075 15396 INFO Test_module odoo.modules.loading: loading partner_autocomplete/views/res_company_views.xml 
+2024-08-26 01:55:33,087 15396 INFO Test_module odoo.modules.loading: loading partner_autocomplete/views/res_config_settings_views.xml 
+2024-08-26 01:55:33,098 15396 INFO Test_module odoo.modules.loading: loading partner_autocomplete/data/cron.xml 
+2024-08-26 01:55:33,132 15396 INFO Test_module odoo.modules.loading: Module partner_autocomplete loaded in 0.30s, 175 queries (+175 other) 
+2024-08-26 01:55:33,132 15396 INFO Test_module odoo.modules.loading: Loading module sms (23/24) 
+2024-08-26 01:55:33,331 15396 INFO Test_module odoo.modules.registry: module sms: creating or updating database tables 
+2024-08-26 01:55:33,331 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.sms_template_id 
+2024-08-26 01:55:33,331 15396 INFO Test_module odoo.models: Prepare computation of ir.actions.server.sms_method 
+2024-08-26 01:55:33,365 15396 INFO Test_module odoo.models: Prepare computation of res.partner.phone_sanitized 
+2024-08-26 01:55:33,515 15396 INFO Test_module odoo.addons.phone_validation.tools.phone_validation: The `phonenumbers` Python module is not installed, contact numbers will not be verified. Please install the `phonenumbers` Python module. 
+2024-08-26 01:55:33,665 15396 INFO Test_module odoo.modules.loading: loading sms/data/ir_cron_data.xml 
+2024-08-26 01:55:33,665 15396 INFO Test_module odoo.modules.loading: loading sms/wizard/sms_composer_views.xml 
+2024-08-26 01:55:33,699 15396 INFO Test_module odoo.modules.loading: loading sms/wizard/sms_template_preview_views.xml 
+2024-08-26 01:55:33,699 15396 INFO Test_module odoo.modules.loading: loading sms/wizard/sms_resend_views.xml 
+2024-08-26 01:55:33,731 15396 INFO Test_module odoo.modules.loading: loading sms/wizard/sms_template_reset_views.xml 
+2024-08-26 01:55:33,743 15396 INFO Test_module odoo.modules.loading: loading sms/views/ir_actions_server_views.xml 
+2024-08-26 01:55:33,757 15396 INFO Test_module odoo.modules.loading: loading sms/views/mail_notification_views.xml 
+2024-08-26 01:55:33,773 15396 INFO Test_module odoo.modules.loading: loading sms/views/res_config_settings_views.xml 
+2024-08-26 01:55:33,782 15396 INFO Test_module odoo.modules.loading: loading sms/views/res_partner_views.xml 
+2024-08-26 01:55:33,831 15396 INFO Test_module odoo.modules.loading: loading sms/views/sms_sms_views.xml 
+2024-08-26 01:55:33,848 15396 INFO Test_module odoo.modules.loading: loading sms/views/sms_template_views.xml 
+2024-08-26 01:55:33,883 15396 INFO Test_module odoo.modules.loading: loading sms/security/ir.model.access.csv 
+2024-08-26 01:55:33,950 15396 INFO Test_module odoo.modules.loading: loading sms/security/sms_security.xml 
+2024-08-26 01:55:33,978 15396 INFO Test_module odoo.modules.loading: Module sms loaded in 0.85s, 597 queries (+597 other) 
+2024-08-26 01:55:33,978 15396 INFO Test_module odoo.modules.loading: Loading module snailmail (24/24) 
+2024-08-26 01:55:34,131 15396 INFO Test_module odoo.modules.registry: module snailmail: creating or updating database tables 
+2024-08-26 01:55:34,367 15396 INFO Test_module odoo.modules.loading: loading snailmail/data/snailmail_data.xml 
+2024-08-26 01:55:34,385 15396 INFO Test_module odoo.modules.loading: loading snailmail/views/report_assets.xml 
+2024-08-26 01:55:34,404 15396 INFO Test_module odoo.modules.loading: loading snailmail/views/snailmail_views.xml 
+2024-08-26 01:55:34,425 15396 INFO Test_module odoo.modules.loading: loading snailmail/wizard/snailmail_confirm_views.xml 
+2024-08-26 01:55:34,431 15396 INFO Test_module odoo.modules.loading: loading snailmail/wizard/snailmail_letter_format_error_views.xml 
+2024-08-26 01:55:34,449 15396 INFO Test_module odoo.modules.loading: loading snailmail/wizard/snailmail_letter_missing_required_fields_views.xml 
+2024-08-26 01:55:34,465 15396 INFO Test_module odoo.modules.loading: loading snailmail/security/ir.model.access.csv 
+2024-08-26 01:55:34,482 15396 INFO Test_module odoo.modules.loading: Module snailmail loaded in 0.50s, 378 queries (+378 other) 
+2024-08-26 01:55:34,482 15396 INFO Test_module odoo.modules.loading: 24 modules loaded in 8.07s, 6332 queries (+6332 extra) 
+2024-08-26 01:55:34,497 15396 INFO Test_module odoo.modules.loading: loading 46 modules... 
+2024-08-26 01:55:34,497 15396 INFO Test_module odoo.modules.loading: Loading module social_media (2/46) 
+2024-08-26 01:55:34,536 15396 INFO Test_module odoo.modules.registry: module social_media: creating or updating database tables 
+2024-08-26 01:55:34,582 15396 INFO Test_module odoo.modules.loading: loading social_media/views/res_company_views.xml 
+2024-08-26 01:55:34,606 15396 INFO Test_module odoo.modules.loading: Module social_media loaded in 0.11s, 67 queries (+67 other) 
+2024-08-26 01:55:34,606 15396 INFO Test_module odoo.modules.loading: Loading module uom (3/46) 
+2024-08-26 01:55:34,649 15396 INFO Test_module odoo.modules.registry: module uom: creating or updating database tables 
+2024-08-26 01:55:34,715 15396 INFO Test_module odoo.modules.loading: loading uom/data/uom_data.xml 
+2024-08-26 01:55:34,792 15396 INFO Test_module odoo.modules.loading: loading uom/security/uom_security.xml 
+2024-08-26 01:55:34,819 15396 INFO Test_module odoo.modules.loading: loading uom/security/ir.model.access.csv 
+2024-08-26 01:55:34,829 15396 INFO Test_module odoo.modules.loading: loading uom/views/uom_uom_views.xml 
+2024-08-26 01:55:34,873 15396 INFO Test_module odoo.modules.loading: Module uom loaded in 0.27s, 282 queries (+282 other) 
+2024-08-26 01:55:34,873 15396 INFO Test_module odoo.modules.loading: Loading module http_routing (9/46) 
+2024-08-26 01:55:34,898 15396 INFO Test_module odoo.modules.registry: module http_routing: creating or updating database tables 
+2024-08-26 01:55:34,898 15396 INFO Test_module odoo.modules.loading: loading http_routing/views/http_routing_template.xml 
+2024-08-26 01:55:34,968 15396 INFO Test_module odoo.modules.loading: loading http_routing/views/res_lang_views.xml 
+2024-08-26 01:55:34,996 15396 INFO Test_module odoo.modules.loading: Module http_routing loaded in 0.12s, 77 queries (+77 other) 
+2024-08-26 01:55:34,996 15396 INFO Test_module odoo.modules.loading: Loading module resource (10/46) 
+2024-08-26 01:55:35,098 15396 INFO Test_module odoo.modules.registry: module resource: creating or updating database tables 
+2024-08-26 01:55:35,281 15396 INFO Test_module odoo.modules.loading: loading resource/data/resource_data.xml 
+2024-08-26 01:55:35,314 15396 INFO Test_module odoo.modules.loading: loading resource/security/ir.model.access.csv 
+2024-08-26 01:55:35,315 15396 INFO Test_module odoo.modules.loading: loading resource/security/resource_security.xml 
+2024-08-26 01:55:35,364 15396 INFO Test_module odoo.modules.loading: loading resource/views/resource_views.xml 
+2024-08-26 01:55:35,448 15396 INFO Test_module odoo.modules.loading: Module resource loaded in 0.45s, 430 queries (+430 other) 
+2024-08-26 01:55:35,448 15396 INFO Test_module odoo.modules.loading: Loading module utm (11/46) 
+2024-08-26 01:55:35,565 15396 INFO Test_module odoo.modules.registry: module utm: creating or updating database tables 
+2024-08-26 01:55:35,748 15396 INFO Test_module odoo.modules.loading: loading utm/data/utm_medium_data.xml 
+2024-08-26 01:55:35,782 15396 INFO Test_module odoo.modules.loading: loading utm/data/utm_source_data.xml 
+2024-08-26 01:55:35,815 15396 INFO Test_module odoo.modules.loading: loading utm/data/utm_stage_data.xml 
+2024-08-26 01:55:35,831 15396 INFO Test_module odoo.modules.loading: loading utm/data/utm_tag_data.xml 
+2024-08-26 01:55:35,832 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_campaign_views.xml 
+2024-08-26 01:55:35,865 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_medium_views.xml 
+2024-08-26 01:55:35,882 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_source_views.xml 
+2024-08-26 01:55:35,898 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_stage_views.xml 
+2024-08-26 01:55:35,915 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_tag_views.xml 
+2024-08-26 01:55:35,932 15396 INFO Test_module odoo.modules.loading: loading utm/views/utm_menus.xml 
+2024-08-26 01:55:35,977 15396 INFO Test_module odoo.modules.loading: loading utm/security/ir.model.access.csv 
+2024-08-26 01:55:35,998 15396 INFO Test_module odoo.modules.loading: Module utm loaded in 0.55s, 403 queries (+403 other) 
+2024-08-26 01:55:35,998 15396 INFO Test_module odoo.modules.loading: Loading module analytic (17/46) 
+2024-08-26 01:55:36,114 15396 INFO Test_module odoo.modules.registry: module analytic: creating or updating database tables 
+2024-08-26 01:55:36,332 15396 INFO Test_module odoo.modules.loading: loading analytic/security/analytic_security.xml 
+2024-08-26 01:55:36,379 15396 INFO Test_module odoo.modules.loading: loading analytic/security/ir.model.access.csv 
+2024-08-26 01:55:36,381 15396 INFO Test_module odoo.modules.loading: loading analytic/views/analytic_line_views.xml 
+2024-08-26 01:55:36,443 15396 INFO Test_module odoo.modules.loading: loading analytic/views/analytic_account_views.xml 
+2024-08-26 01:55:36,465 15396 INFO Test_module odoo.modules.loading: loading analytic/views/analytic_plan_views.xml 
+2024-08-26 01:55:36,498 15396 INFO Test_module odoo.modules.loading: loading analytic/views/analytic_distribution_model_views.xml 
+2024-08-26 01:55:36,521 15396 INFO Test_module odoo.modules.loading: loading analytic/data/analytic_data.xml 
+2024-08-26 01:55:36,539 15396 INFO Test_module odoo.modules.loading: Module analytic loaded in 0.54s, 394 queries (+394 other) 
+2024-08-26 01:55:36,539 15396 INFO Test_module odoo.modules.loading: Loading module gamification (22/46) 
+2024-08-26 01:55:36,702 15396 INFO Test_module odoo.modules.registry: module gamification: creating or updating database tables 
+2024-08-26 01:55:37,153 15396 INFO Test_module odoo.modules.loading: loading gamification/wizard/update_goal.xml 
+2024-08-26 01:55:37,165 15396 INFO Test_module odoo.modules.loading: loading gamification/wizard/grant_badge.xml 
+2024-08-26 01:55:37,179 15396 INFO Test_module odoo.modules.loading: loading gamification/views/res_users_views.xml 
+2024-08-26 01:55:37,198 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_karma_rank_views.xml 
+2024-08-26 01:55:37,215 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_karma_tracking_views.xml 
+2024-08-26 01:55:37,232 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_badge_views.xml 
+2024-08-26 01:55:37,265 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_badge_user_views.xml 
+2024-08-26 01:55:37,288 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_goal_views.xml 
+2024-08-26 01:55:37,314 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_goal_definition_views.xml 
+2024-08-26 01:55:37,332 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_challenge_views.xml 
+2024-08-26 01:55:37,379 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_challenge_line_views.xml 
+2024-08-26 01:55:37,388 15396 INFO Test_module odoo.modules.loading: loading gamification/views/gamification_menus.xml 
+2024-08-26 01:55:37,415 15396 INFO Test_module odoo.modules.loading: loading gamification/security/gamification_security.xml 
+2024-08-26 01:55:37,432 15396 INFO Test_module odoo.modules.loading: loading gamification/security/ir.model.access.csv 
+2024-08-26 01:55:37,467 15396 INFO Test_module odoo.modules.loading: loading gamification/data/ir_cron_data.xml 
+2024-08-26 01:55:37,485 15396 INFO Test_module odoo.modules.loading: loading gamification/data/mail_template_data.xml 
+2024-08-26 01:55:37,503 15396 INFO Test_module odoo.modules.loading: loading gamification/data/gamification_badge_data.xml 
+2024-08-26 01:55:37,581 15396 INFO Test_module odoo.modules.loading: loading gamification/data/gamification_challenge_data.xml 
+2024-08-26 01:55:37,632 15396 INFO Test_module odoo.modules.loading: loading gamification/data/gamification_karma_rank_data.xml 
+2024-08-26 01:55:37,948 15396 INFO Test_module odoo.modules.loading: Module gamification loaded in 1.41s, 939 queries (+939 other) 
+2024-08-26 01:55:37,948 15396 INFO Test_module odoo.modules.loading: Loading module hr (24/46) 
+2024-08-26 01:55:38,249 15396 INFO Test_module odoo.modules.registry: module hr: creating or updating database tables 
+2024-08-26 01:55:39,731 15396 INFO Test_module odoo.modules.loading: loading hr/security/hr_security.xml 
+2024-08-26 01:55:39,870 15396 INFO Test_module odoo.modules.loading: loading hr/security/ir.model.access.csv 
+2024-08-26 01:55:39,899 15396 INFO Test_module odoo.modules.loading: loading hr/wizard/hr_plan_wizard_views.xml 
+2024-08-26 01:55:39,918 15396 INFO Test_module odoo.modules.loading: loading hr/wizard/hr_departure_wizard_views.xml 
+2024-08-26 01:55:39,932 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_departure_reason_views.xml 
+2024-08-26 01:55:39,946 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_contract_type_views.xml 
+2024-08-26 01:55:39,963 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_job_views.xml 
+2024-08-26 01:55:39,982 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_plan_views.xml 
+2024-08-26 01:55:40,024 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_employee_category_views.xml 
+2024-08-26 01:55:40,039 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_employee_public_views.xml 
+2024-08-26 01:55:40,065 15396 INFO Test_module odoo.modules.loading: loading hr/report/hr_employee_badge.xml 
+2024-08-26 01:55:40,082 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_employee_views.xml 
+2024-08-26 01:55:40,151 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_department_views.xml 
+2024-08-26 01:55:40,181 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_work_location_views.xml 
+2024-08-26 01:55:40,198 15396 INFO Test_module odoo.modules.loading: loading hr/views/hr_views.xml 
+2024-08-26 01:55:40,289 15396 INFO Test_module odoo.modules.loading: loading hr/views/res_config_settings_views.xml 
+2024-08-26 01:55:40,320 15396 INFO Test_module odoo.modules.loading: loading hr/views/mail_channel_views.xml 
+2024-08-26 01:55:40,333 15396 INFO Test_module odoo.modules.loading: loading hr/views/res_users.xml 
+2024-08-26 01:55:40,398 15396 INFO Test_module odoo.modules.loading: loading hr/views/res_partner_views.xml 
+2024-08-26 01:55:40,415 15396 INFO Test_module odoo.modules.loading: loading hr/data/hr_data.xml 
+2024-08-26 01:55:40,531 15396 INFO Test_module odoo.modules.loading: Module hr loaded in 2.58s, 2646 queries (+2646 other) 
+2024-08-26 01:55:40,531 15396 INFO Test_module odoo.modules.loading: Loading module link_tracker (26/46) 
+2024-08-26 01:55:40,632 15396 INFO Test_module odoo.modules.registry: module link_tracker: creating or updating database tables 
+2024-08-26 01:55:40,782 15396 INFO Test_module odoo.modules.loading: loading link_tracker/views/link_tracker_views.xml 
+2024-08-26 01:55:40,842 15396 INFO Test_module odoo.modules.loading: loading link_tracker/views/utm_campaign_views.xml 
+2024-08-26 01:55:40,861 15396 INFO Test_module odoo.modules.loading: loading link_tracker/security/ir.model.access.csv 
+2024-08-26 01:55:40,884 15396 INFO Test_module odoo.modules.loading: Module link_tracker loaded in 0.35s, 247 queries (+247 other) 
+2024-08-26 01:55:40,884 15396 INFO Test_module odoo.modules.loading: Loading module rating (30/46) 
+2024-08-26 01:55:41,017 15396 INFO Test_module odoo.modules.registry: module rating: creating or updating database tables 
+2024-08-26 01:55:41,223 15396 INFO Test_module odoo.modules.loading: loading rating/views/rating_rating_views.xml 
+2024-08-26 01:55:41,282 15396 INFO Test_module odoo.modules.loading: loading rating/views/rating_templates.xml 
+2024-08-26 01:55:41,299 15396 INFO Test_module odoo.modules.loading: loading rating/views/mail_message_views.xml 
+2024-08-26 01:55:41,316 15396 INFO Test_module odoo.modules.loading: loading rating/security/ir.model.access.csv 
+2024-08-26 01:55:41,344 15396 INFO Test_module odoo.modules.loading: Module rating loaded in 0.46s, 363 queries (+363 other) 
+2024-08-26 01:55:41,344 15396 INFO Test_module odoo.modules.loading: Loading module hr_gamification (32/46) 
+2024-08-26 01:55:41,432 15396 INFO Test_module odoo.modules.registry: module hr_gamification: creating or updating database tables 
+2024-08-26 01:55:41,537 15396 INFO Test_module odoo.modules.loading: loading hr_gamification/security/gamification_security.xml 
+2024-08-26 01:55:41,550 15396 INFO Test_module odoo.modules.loading: loading hr_gamification/security/ir.model.access.csv 
+2024-08-26 01:55:41,563 15396 INFO Test_module odoo.modules.loading: loading hr_gamification/wizard/gamification_badge_user_wizard_views.xml 
+2024-08-26 01:55:41,581 15396 INFO Test_module odoo.modules.loading: loading hr_gamification/views/gamification_views.xml 
+2024-08-26 01:55:41,615 15396 INFO Test_module odoo.modules.loading: loading hr_gamification/views/hr_employee_views.xml 
+2024-08-26 01:55:41,660 15396 INFO Test_module odoo.modules.loading: Module hr_gamification loaded in 0.32s, 252 queries (+252 other) 
+2024-08-26 01:55:41,660 15396 INFO Test_module odoo.modules.loading: Loading module hr_org_chart (33/46) 
+2024-08-26 01:55:41,741 15396 INFO Test_module odoo.modules.registry: module hr_org_chart: creating or updating database tables 
+2024-08-26 01:55:41,781 15396 INFO Test_module odoo.modules.loading: loading hr_org_chart/views/hr_views.xml 
+2024-08-26 01:55:41,831 15396 INFO Test_module odoo.modules.loading: Module hr_org_chart loaded in 0.17s, 88 queries (+88 other) 
+2024-08-26 01:55:41,831 15396 INFO Test_module odoo.modules.loading: Loading module mail_bot_hr (34/46) 
+2024-08-26 01:55:41,885 15396 INFO Test_module odoo.modules.loading: loading mail_bot_hr/views/res_users_views.xml 
+2024-08-26 01:55:42,007 15396 INFO Test_module odoo.modules.loading: Module mail_bot_hr loaded in 0.18s, 56 queries (+56 other) 
+2024-08-26 01:55:42,007 15396 INFO Test_module odoo.modules.loading: Loading module portal (36/46) 
+2024-08-26 01:55:42,214 15396 INFO Test_module odoo.modules.registry: module portal: creating or updating database tables 
+2024-08-26 01:55:42,467 15396 INFO Test_module odoo.modules.loading: loading portal/security/ir.model.access.csv 
+2024-08-26 01:55:42,480 15396 INFO Test_module odoo.modules.loading: loading portal/data/mail_template_data.xml 
+2024-08-26 01:55:42,484 15396 INFO Test_module odoo.modules.loading: loading portal/data/mail_templates.xml 
+2024-08-26 01:55:42,501 15396 INFO Test_module odoo.modules.loading: loading portal/views/portal_templates.xml 
+2024-08-26 01:55:42,598 15396 INFO Test_module odoo.modules.loading: loading portal/views/res_config_settings_views.xml 
+2024-08-26 01:55:42,632 15396 INFO Test_module odoo.modules.loading: loading portal/wizard/portal_share_views.xml 
+2024-08-26 01:55:42,650 15396 INFO Test_module odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml 
+2024-08-26 01:55:42,687 15396 INFO Test_module odoo.modules.loading: Module portal loaded in 0.68s, 487 queries (+487 other) 
+2024-08-26 01:55:42,687 15396 INFO Test_module odoo.modules.loading: Loading module survey (39/46) 
+2024-08-26 01:55:42,886 15396 INFO Test_module odoo.modules.registry: module survey: creating or updating database tables 
+2024-08-26 01:55:42,980 15396 INFO Test_module odoo.models: Prepare computation of gamification.badge.survey_id 
+2024-08-26 01:55:43,284 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_report_templates.xml 
+2024-08-26 01:55:43,298 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_reports.xml 
+2024-08-26 01:55:43,315 15396 INFO Test_module odoo.modules.loading: loading survey/data/mail_template_data.xml 
+2024-08-26 01:55:43,338 15396 INFO Test_module odoo.modules.loading: loading survey/security/survey_security.xml 
+2024-08-26 01:55:43,506 15396 INFO Test_module odoo.modules.loading: loading survey/security/ir.model.access.csv 
+2024-08-26 01:55:43,514 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_menus.xml 
+2024-08-26 01:55:43,549 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_survey_views.xml 
+2024-08-26 01:55:43,614 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_user_views.xml 
+2024-08-26 01:55:43,664 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_question_views.xml 
+2024-08-26 01:55:43,731 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_templates.xml 
+2024-08-26 01:55:43,831 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_templates_management.xml 
+2024-08-26 01:55:43,865 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_templates_print.xml 
+2024-08-26 01:55:43,882 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_templates_statistics.xml 
+2024-08-26 01:55:43,943 15396 INFO Test_module odoo.modules.loading: loading survey/views/survey_templates_user_input_session.xml 
+2024-08-26 01:55:43,964 15396 INFO Test_module odoo.modules.loading: loading survey/views/gamification_badge_views.xml 
+2024-08-26 01:55:43,982 15396 INFO Test_module odoo.modules.loading: loading survey/wizard/survey_invite_views.xml 
+2024-08-26 01:55:43,998 15396 INFO Test_module odoo.modules.loading: loading survey/views/res_partner_views.xml 
+2024-08-26 01:55:44,033 15396 INFO Test_module odoo.modules.loading: Module survey loaded in 1.35s, 1241 queries (+1241 other) 
+2024-08-26 01:55:44,033 15396 INFO Test_module odoo.modules.loading: Loading module auth_totp_portal (40/46) 
+2024-08-26 01:55:44,099 15396 INFO Test_module odoo.modules.registry: module auth_totp_portal: creating or updating database tables 
+2024-08-26 01:55:44,126 15396 INFO Test_module odoo.modules.loading: loading auth_totp_portal/security/security.xml 
+2024-08-26 01:55:44,148 15396 INFO Test_module odoo.modules.loading: loading auth_totp_portal/views/templates.xml 
+2024-08-26 01:55:44,183 15396 INFO Test_module odoo.modules.loading: Module auth_totp_portal loaded in 0.15s, 68 queries (+68 other) 
+2024-08-26 01:55:44,183 15396 INFO Test_module odoo.modules.loading: Loading module digest (41/46) 
+2024-08-26 01:55:44,282 15396 INFO Test_module odoo.modules.registry: module digest: creating or updating database tables 
+2024-08-26 01:55:44,421 15396 INFO Test_module odoo.modules.loading: loading digest/security/ir.model.access.csv 
+2024-08-26 01:55:44,431 15396 INFO Test_module odoo.modules.loading: loading digest/data/digest_data.xml 
+2024-08-26 01:55:44,448 15396 INFO Test_module odoo.modules.loading: loading digest/data/digest_tips_data.xml 
+2024-08-26 01:55:44,484 15396 INFO Test_module odoo.modules.loading: loading digest/data/ir_cron_data.xml 
+2024-08-26 01:55:44,495 15396 INFO Test_module odoo.modules.loading: loading digest/data/res_config_settings_data.xml 
+2024-08-26 01:55:44,506 15396 INFO Test_module odoo.modules.loading: loading digest/views/digest_views.xml 
+2024-08-26 01:55:44,552 15396 INFO Test_module odoo.modules.loading: loading digest/views/digest_templates.xml 
+2024-08-26 01:55:44,562 15396 INFO Test_module odoo.modules.loading: loading digest/views/res_config_settings_views.xml 
+2024-08-26 01:55:44,598 15396 INFO Test_module odoo.modules.loading: Module digest loaded in 0.42s, 295 queries (+295 other) 
+2024-08-26 01:55:44,598 15396 INFO Test_module odoo.modules.loading: Loading module portal_rating (42/46) 
+2024-08-26 01:55:44,698 15396 INFO Test_module odoo.modules.registry: module portal_rating: creating or updating database tables 
+2024-08-26 01:55:44,748 15396 INFO Test_module odoo.modules.loading: loading portal_rating/views/rating_rating_views.xml 
+2024-08-26 01:55:44,773 15396 INFO Test_module odoo.modules.loading: loading portal_rating/views/portal_templates.xml 
+2024-08-26 01:55:44,781 15396 INFO Test_module odoo.modules.loading: loading portal_rating/views/rating_templates.xml 
+2024-08-26 01:55:44,806 15396 INFO Test_module odoo.modules.loading: Module portal_rating loaded in 0.21s, 101 queries (+101 other) 
+2024-08-26 01:55:44,806 15396 INFO Test_module odoo.modules.loading: Loading module mass_mailing (43/46) 
+2024-08-26 01:55:45,164 15396 INFO Test_module odoo.modules.registry: module mass_mailing: creating or updating database tables 
+2024-08-26 01:55:45,928 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/security/res_groups_data.xml 
+2024-08-26 01:55:46,004 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/security/ir.model.access.csv 
+2024-08-26 01:55:46,032 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/digest_data.xml 
+2024-08-26 01:55:46,045 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/ir_attachment_data.xml 
+2024-08-26 01:55:46,086 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/ir_config_parameter_data.xml 
+2024-08-26 01:55:46,098 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/ir_cron_data.xml 
+2024-08-26 01:55:46,115 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/ir_module_data.xml 
+2024-08-26 01:55:46,133 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/mailing_data_templates.xml 
+2024-08-26 01:55:46,150 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/mailing_list_data.xml 
+2024-08-26 01:55:46,183 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/data/res_users_data.xml 
+2024-08-26 01:55:46,225 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mail_compose_message_views.xml 
+2024-08-26 01:55:46,241 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mailing_contact_import_views.xml 
+2024-08-26 01:55:46,247 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mailing_contact_to_list_views.xml 
+2024-08-26 01:55:46,265 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mailing_list_merge_views.xml 
+2024-08-26 01:55:46,281 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mailing_mailing_test_views.xml 
+2024-08-26 01:55:46,299 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/wizard/mailing_mailing_schedule_date_views.xml 
+2024-08-26 01:55:46,314 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/report/mailing_trace_report_views.xml 
+2024-08-26 01:55:46,335 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_filter_views.xml 
+2024-08-26 01:55:46,365 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_trace_views.xml 
+2024-08-26 01:55:46,402 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/link_tracker_views.xml 
+2024-08-26 01:55:46,442 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_contact_views.xml 
+2024-08-26 01:55:46,485 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_contact_subscription_views.xml 
+2024-08-26 01:55:46,506 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_list_views.xml 
+2024-08-26 01:55:46,531 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_mailing_views.xml 
+2024-08-26 01:55:46,634 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/res_config_settings_views.xml 
+2024-08-26 01:55:46,668 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/utm_campaign_views.xml 
+2024-08-26 01:55:46,695 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_menus.xml 
+2024-08-26 01:55:46,761 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/assets.xml 
+2024-08-26 01:55:46,764 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_templates_portal_layouts.xml 
+2024-08-26 01:55:46,781 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_templates_portal_management.xml 
+2024-08-26 01:55:46,798 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/mailing_templates_portal_unsubscribe.xml 
+2024-08-26 01:55:46,828 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/themes_templates.xml 
+2024-08-26 01:55:46,848 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets_themes.xml 
+2024-08-26 01:55:46,930 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_alert.xml 
+2024-08-26 01:55:46,949 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_blockquote.xml 
+2024-08-26 01:55:46,967 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_call_to_action.xml 
+2024-08-26 01:55:46,967 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_coupon_code.xml 
+2024-08-26 01:55:46,988 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_cover.xml 
+2024-08-26 01:55:46,997 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_color_blocks_2.xml 
+2024-08-26 01:55:47,009 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_company_team.xml 
+2024-08-26 01:55:47,021 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_comparisons.xml 
+2024-08-26 01:55:47,031 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_event.xml 
+2024-08-26 01:55:47,031 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_features.xml 
+2024-08-26 01:55:47,048 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_features_grid.xml 
+2024-08-26 01:55:47,065 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_hr.xml 
+2024-08-26 01:55:47,082 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_image_text.xml 
+2024-08-26 01:55:47,098 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_masonry_block.xml 
+2024-08-26 01:55:47,164 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_media_list.xml 
+2024-08-26 01:55:47,186 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_numbers.xml 
+2024-08-26 01:55:47,195 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_picture.xml 
+2024-08-26 01:55:47,205 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_product_list.xml 
+2024-08-26 01:55:47,217 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_rating.xml 
+2024-08-26 01:55:47,242 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_references.xml 
+2024-08-26 01:55:47,253 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_showcase.xml 
+2024-08-26 01:55:47,263 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_text_block.xml 
+2024-08-26 01:55:47,264 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_text_highlight.xml 
+2024-08-26 01:55:47,282 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_text_image.xml 
+2024-08-26 01:55:47,282 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_three_columns.xml 
+2024-08-26 01:55:47,304 15396 INFO Test_module odoo.modules.loading: loading mass_mailing/views/snippets/s_title.xml 
+2024-08-26 01:55:47,332 15396 INFO Test_module odoo.modules.loading: Module mass_mailing loaded in 2.53s, 2101 queries (+2101 other) 
+2024-08-26 01:55:47,332 15396 INFO Test_module odoo.modules.loading: Loading module project (44/46) 
+2024-08-26 01:55:47,664 15396 INFO Test_module odoo.modules.registry: module project: creating or updating database tables 
+2024-08-26 01:55:48,383 15396 INFO Test_module odoo.modules.loading: loading project/security/project_security.xml 
+2024-08-26 01:55:48,705 15396 INFO Test_module odoo.modules.loading: loading project/security/ir.model.access.csv 
+2024-08-26 01:55:48,730 15396 INFO Test_module odoo.modules.loading: loading project/security/ir.model.access.xml 
+2024-08-26 01:55:48,748 15396 INFO Test_module odoo.modules.loading: loading project/data/digest_data.xml 
+2024-08-26 01:55:48,761 15396 INFO Test_module odoo.modules.loading: loading project/report/project_report_views.xml 
+2024-08-26 01:55:48,781 15396 INFO Test_module odoo.modules.loading: loading project/report/project_task_burndown_chart_report_views.xml 
+2024-08-26 01:55:48,811 15396 INFO Test_module odoo.modules.loading: loading project/views/analytic_views.xml 
+2024-08-26 01:55:48,824 15396 INFO Test_module odoo.modules.loading: loading project/views/digest_views.xml 
+2024-08-26 01:55:48,831 15396 INFO Test_module odoo.modules.loading: loading project/views/rating_rating_views.xml 
+2024-08-26 01:55:48,898 15396 INFO Test_module odoo.modules.loading: loading project/views/project_update_views.xml 
+2024-08-26 01:55:48,939 15396 INFO Test_module odoo.modules.loading: loading project/views/project_update_templates.xml 
+2024-08-26 01:55:48,954 15396 INFO Test_module odoo.modules.loading: loading project/views/project_project_stage_views.xml 
+2024-08-26 01:55:48,981 15396 INFO Test_module odoo.modules.loading: loading project/wizard/project_share_wizard_views.xml 
+2024-08-26 01:55:48,998 15396 INFO Test_module odoo.modules.loading: loading project/views/project_collaborator_views.xml 
+2024-08-26 01:55:49,015 15396 INFO Test_module odoo.modules.loading: loading project/views/project_views.xml 
+2024-08-26 01:55:49,404 15396 INFO Test_module odoo.modules.loading: loading project/views/project_milestone_views.xml 
+2024-08-26 01:55:49,431 15396 INFO Test_module odoo.modules.loading: loading project/views/res_partner_views.xml 
+2024-08-26 01:55:49,453 15396 INFO Test_module odoo.modules.loading: loading project/views/res_config_settings_views.xml 
+2024-08-26 01:55:49,489 15396 INFO Test_module odoo.modules.loading: loading project/views/mail_activity_views.xml 
+2024-08-26 01:55:49,504 15396 INFO Test_module odoo.modules.loading: loading project/views/project_sharing_views.xml 
+2024-08-26 01:55:49,547 15396 INFO Test_module odoo.modules.loading: loading project/views/project_portal_templates.xml 
+2024-08-26 01:55:49,615 15396 INFO Test_module odoo.modules.loading: loading project/views/project_task_templates.xml 
+2024-08-26 01:55:49,630 15396 INFO Test_module odoo.modules.loading: loading project/views/project_sharing_templates.xml 
+2024-08-26 01:55:49,648 15396 INFO Test_module odoo.modules.loading: loading project/data/ir_cron_data.xml 
+2024-08-26 01:55:49,672 15396 INFO Test_module odoo.modules.loading: loading project/data/mail_message_subtype_data.xml 
+2024-08-26 01:55:49,698 15396 INFO Test_module odoo.modules.loading: loading project/data/mail_template_data.xml 
+2024-08-26 01:55:49,715 15396 INFO Test_module odoo.modules.loading: loading project/data/project_data.xml 
+2024-08-26 01:55:49,740 15396 INFO Test_module odoo.modules.loading: loading project/wizard/project_task_type_delete_views.xml 
+2024-08-26 01:55:49,781 15396 INFO Test_module odoo.modules.loading: Module project loaded in 2.45s, 2426 queries (+2426 other) 
+2024-08-26 01:55:49,781 15396 INFO Test_module odoo.modules.loading: Loading module mass_mailing_themes (45/46) 
+2024-08-26 01:55:49,848 15396 INFO Test_module odoo.modules.loading: loading mass_mailing_themes/views/mass_mailing_themes_templates.xml 
+2024-08-26 01:55:49,924 15396 INFO Test_module odoo.modules.loading: Module mass_mailing_themes loaded in 0.14s, 57 queries (+57 other) 
+2024-08-26 01:55:49,924 15396 INFO Test_module odoo.modules.loading: Loading module project_sms (46/46) 
+2024-08-26 01:55:49,998 15396 INFO Test_module odoo.modules.registry: module project_sms: creating or updating database tables 
+2024-08-26 01:55:50,089 15396 INFO Test_module odoo.modules.loading: loading project_sms/views/project_stage_views.xml 
+2024-08-26 01:55:50,114 15396 INFO Test_module odoo.modules.loading: loading project_sms/views/project_task_type_views.xml 
+2024-08-26 01:55:50,131 15396 INFO Test_module odoo.modules.loading: loading project_sms/views/project_views.xml 
+2024-08-26 01:55:50,148 15396 INFO Test_module odoo.modules.loading: loading project_sms/security/ir.model.access.csv 
+2024-08-26 01:55:50,166 15396 INFO Test_module odoo.modules.loading: loading project_sms/security/project_sms_security.xml 
+2024-08-26 01:55:50,187 15396 INFO Test_module odoo.modules.loading: Module project_sms loaded in 0.26s, 173 queries (+173 other) 
+2024-08-26 01:55:50,188 15396 INFO Test_module odoo.modules.loading: 46 modules loaded in 15.69s, 13193 queries (+13193 extra) 
+2024-08-26 01:55:50,684 15396 INFO Test_module odoo.modules.loading: Modules loaded. 
+2024-08-26 01:55:50,686 15396 INFO Test_module odoo.modules.registry: Registry loaded in 24.729s 
+2024-08-26 01:55:50,686 15396 INFO Test_module odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-08-26 01:55:50,686 15396 INFO Test_module odoo.modules.registry: Registry changed, signaling through the database 
+2024-08-26 01:55:50,686 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:55:50] "POST /web/dataset/call_button HTTP/1.1" 200 - 21337 12.212 12.708
+2024-08-26 01:55:51,015 15396 INFO Test_module odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-08-26 01:56:07,994 15396 INFO Test_module odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2024-08-26 01:56:07,996 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:07] "GET /web HTTP/1.1" 200 - 172 0.136 16.845
+2024-08-26 01:56:08,066 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/assets/107-85de1c5/web.assets_common.min.css HTTP/1.1" 200 - 9 0.004 0.021
+2024-08-26 01:56:08,486 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/assets/108-cdd43f3/web.assets_backend.min.css HTTP/1.1" 200 - 4 0.002 0.133
+2024-08-26 01:56:08,487 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/assets/111-ec668c5/web.assets_backend_prod_only.min.js HTTP/1.1" 200 - 4 0.018 0.112
+2024-08-26 01:56:08,496 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/webclient/translations/afe89ee9939cd9e508982eab2085b9aac4627970?lang=en_US HTTP/1.1" 200 - 2 0.005 0.109
+2024-08-26 01:56:08,557 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/webclient/load_menus/d6c4a333a1b1f2d6b2ffb71864069375381f33d64e2c25a48a6e7cc3c419f35f HTTP/1.1" 200 - 28 0.030 0.164
+2024-08-26 01:56:08,611 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/assets/110-cdd43f3/web.assets_backend.min.js HTTP/1.1" 200 - 4 0.020 0.239
+2024-08-26 01:56:08,767 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:08] "GET /web/assets/109-85de1c5/web.assets_common.min.js HTTP/1.1" 200 - 4 0.017 0.401
+2024-08-26 01:56:09,513 15396 INFO Test_module odoo.addons.partner_autocomplete.models.res_company: Starting enrich of company My Company (1) 
+2024-08-26 01:56:09,530 15396 INFO Test_module odoo.modules.registry: At least one model cache has been invalidated, signaling through the database. 
+2024-08-26 01:56:09,530 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "POST /web/dataset/call_kw/res.company/iap_enrich_auto HTTP/1.1" 200 - 14 0.031 0.003
+2024-08-26 01:56:09,564 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 24 0.016 0.017
+2024-08-26 01:56:09,612 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.007 0.007
+2024-08-26 01:56:09,614 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "POST /web/action/load HTTP/1.1" 200 - 9 0.008 0.009
+2024-08-26 01:56:09,921 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.007
+2024-08-26 01:56:09,998 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:09] "POST /mail/init_messaging HTTP/1.1" 200 - 98 0.083 0.168
+2024-08-26 01:56:10,002 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.055
+2024-08-26 01:56:10,007 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 3 0.006 0.088
+2024-08-26 01:56:10,035 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "POST /mail/inbox/messages HTTP/1.1" 200 - 6 0.014 0.005
+2024-08-26 01:56:10,346 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.001 0.015
+2024-08-26 01:56:10,351 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "GET /web/image/res.partner/2/avatar_128 HTTP/1.1" 200 - 7 0.000 0.005
+2024-08-26 01:56:10,361 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:10] "GET /web/image/mail.channel/1/avatar_128?unique=9d0ca3f79a3497db2a7d0449a78cdfe8af5d0a327400d6fdc3c1f7bc6d4a39a249717683b43cb488b567665df52812e4a9ffdb4403b772e63d68ab0577fa2b02 HTTP/1.1" 200 - 9 0.010 0.005
+2024-08-26 01:56:12,032 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:12] "POST /web/action/load HTTP/1.1" 200 - 10 0.035 0.021
+2024-08-26 01:56:12,389 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:12] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 20 0.042 0.124
+2024-08-26 01:56:12,491 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:12] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 62 0.012 0.011
+2024-08-26 01:56:12,881 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:12] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.020 0.006
+2024-08-26 01:56:12,891 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:12] "POST /base_setup/data HTTP/1.1" 200 - 6 0.010 0.010
+2024-08-26 01:56:13,121 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:13] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.000
+2024-08-26 01:56:13,251 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:13] "GET /web/static/img/transparent.png HTTP/1.1" 200 - 0 0.000 0.012
+2024-08-26 01:56:13,284 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:13] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 200 - 0 0.000 0.022
+2024-08-26 01:56:13,323 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:13] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 200 - 0 0.000 0.016
+2024-08-26 01:56:16,793 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:16] "GET /web?debug=1 HTTP/1.1" 200 - 77 0.086 0.809
+2024-08-26 01:56:17,129 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:17] "GET /web/webclient/load_menus/95a0986a0bbf0be6494c99f5acd76f706e7a95028fa82187a62609c4e95d94f2 HTTP/1.1" 200 - 1 0.000 0.010
+2024-08-26 01:56:17,406 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:17] "POST /web/action/load HTTP/1.1" 200 - 8 0.018 0.001
+2024-08-26 01:56:17,588 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:17] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.005 0.023
+2024-08-26 01:56:17,609 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:17] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 4 0.001 0.036
+2024-08-26 01:56:17,772 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:17] "POST /mail/init_messaging HTTP/1.1" 200 - 30 0.035 0.026
+2024-08-26 01:56:18,026 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 2 0.000 0.005
+2024-08-26 01:56:18,052 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "GET /websocket HTTP/1.1" 101 - 1 0.000 0.006
+2024-08-26 01:56:18,055 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "POST /mail/inbox/messages HTTP/1.1" 200 - 4 0.006 0.003
+2024-08-26 01:56:18,111 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.004 0.002
+2024-08-26 01:56:18,118 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "GET /web/image/res.partner/2/avatar_128 HTTP/1.1" 304 - 7 0.005 0.008
+2024-08-26 01:56:18,139 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:18] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.001
+2024-08-26 01:56:24,755 15396 INFO ? werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:24] "GET /mail/static/src/audio/ting.ogg HTTP/1.1" 206 - 0 0.000 0.000
+2024-08-26 01:56:24,845 15396 INFO Test_module werkzeug: 127.0.0.1 - - [26/Aug/2024 01:56:24] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 200 - 8 0.005 0.019
+2024-08-26 02:03:59,384 15396 INFO ? odoo.service.server: Initiating shutdown 
+2024-08-26 02:03:59,384 15396 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-08-26 02:03:59,565 15396 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 7 connections  

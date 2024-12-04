@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>  
+        <record id="view_bkg_process_epr_form_view" model="ir.ui.view" >
+            <field name="name">view_bkg_process_epr_form_view</field>
+            <field name="model">bkg.process.epr</field>
+            <field name="display_name">Process EPR</field>
+            <field name="arch" type="xml">    
+                <form js_class="epr_process_chart">
+                    <div id="epr_process_chart"/>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

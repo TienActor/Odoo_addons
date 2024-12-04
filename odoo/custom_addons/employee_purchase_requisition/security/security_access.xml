@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="employee_requisition">
+        <field name="name">Employee Purchase Requisition</field>
+        <field name="description">User access level for Material Request
+            module
+        </field>
+        <field name="sequence">20</field>
+    </record>
+    <!--User groups-->
+    <record id="employee_requisition_user" model="res.groups">
+        <field name="name">Requisition Users</field>
+        <field name="category_id" ref="employee_requisition"/>
+    </record>
+
+    <record id="employee_requisition_head" model="res.groups">
+        <field name="name">Department Head</field>
+        <field name="category_id" ref="employee_requisition"/>
+        <field name="implied_ids"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_user'))]"/>
+    </record>
+    <record id="employee_requisition_manager" model="res.groups">
+        <field name="name">Requisition Manager</field>
+        <field name="category_id" ref="employee_requisition"/>
+        <field name="implied_ids"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_head'))]"/>
+    </record>
+    <!--Record rules-->
+    <record id="requisition_user_rule_custom" model="ir.rule">
+        <field name="name">Requisition User Rule</field>
+        <field name="model_id" ref="model_employee_purchase_requisition"/>
+        <field name="domain_force">[('project_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="department_head_rule" model="ir.rule">
+        <field name="name">Department Head Rule</field>
+        <field ref="model_employee_purchase_requisition" name="model_id"/>
+        <field name="domain_force">[('project_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_head'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="requisition_manager_rule" model="ir.rule">
+        <field name="name">Requisition Manager Rule</field>
+        <field ref="model_employee_purchase_requisition" name="model_id"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="requisition_company_rule" model="ir.rule">
+        <field name="name">Purchase Requisition Company Rule</field>
+        <field ref="model_employee_purchase_requisition" name="model_id"/>
+        <field name="domain_force">[('company_id', '=', company_id)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="requisition_pr_stock_rule" model="ir.rule">
+        <field name="name">PR-Stock Users - Read only</field>
+        <field ref="model_employee_purchase_requisition" name="model_id"/>
+        <field name="domain_force">[('state','in',('waiting_head_approval','approved','purchase_order_created','received','cancelled'))]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+
+    <!--  -->
+
+    <record id="requisition_user_rule" model="ir.rule">
+        <field name="name">PR Detail - Requisition User Rule</field>
+        <field name="model_id" ref="model_requisition_order"/>
+        <field name="domain_force">['&amp;', ('state','not in',('waiting_department_approval','waiting_supervisor_approval','waiting_head_approval','approved','purchase_order_created','received','cancelled')), ('requisition_product_id.project_id.message_partner_ids', 'in',  [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="requisition_order_user_read_only_rule" model="ir.rule">
+        <field name="name">PR Detail - Requisition User Rule - Read only</field>
+        <field ref="model_requisition_order" name="model_id"/>
+        <field name="domain_force">['&amp;', ('state','in',('waiting_department_approval','waiting_supervisor_approval','waiting_head_approval','approved','purchase_order_created','received','cancelled')), ('requisition_product_id.project_id.message_partner_ids', 'in',  [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="requisiton_order_department_head_rule" model="ir.rule">
+        <field name="name">PR Detail - Department Head Rule</field>
+        <field ref="model_requisition_order" name="model_id"/>
+        <field name="domain_force">['&amp;', ('state','not in',('waiting_supervisor_approval','waiting_head_approval','approved','purchase_order_created','received','cancelled')), ('requisition_product_id.project_id.message_partner_ids', 'in',  [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_head'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="requisition_order_department_head_read_only_rule" model="ir.rule">
+        <field name="name">PR Detail - Department Head Rule - Read Only</field>
+        <field ref="model_requisition_order" name="model_id"/>
+        <field name="domain_force">['&amp;', ('state','in',('waiting_supervisor_approval','waiting_head_approval','approved','purchase_order_created','received','cancelled')), ('requisition_product_id.project_id.message_partner_ids', 'in',  [user.partner_id.id])]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_head'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="requisition_order_manager_rule" model="ir.rule">
+        <field name="name">PR Detail - Requisition Manager Rule</field>
+        <field ref="model_requisition_order" name="model_id"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups"
+               eval="[(4, ref('employee_purchase_requisition.employee_requisition_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+</odoo>

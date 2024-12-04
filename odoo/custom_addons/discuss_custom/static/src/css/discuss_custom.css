@@ -1,0 +1,58 @@
+.custom-dropdown select.form-control {
+    width: 120px;
+    margin: 10px 0;
+    }
+    .field-complete{
+      positon:relative;
+    }
+    .inputGroup {
+      position: relative;
+    }
+    .clear-input {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+    .search-results li {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .search-results li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .discuss_custom_sidebar_container {
+      height: 635px;
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  .o_widget_discuss_custom_sidebar {
+      height: 100%;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+  }
+  
+  .o_MessageList {
+      overflow-x: hidden !important;
+  }
+  
+  .o_Message_content {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+  }

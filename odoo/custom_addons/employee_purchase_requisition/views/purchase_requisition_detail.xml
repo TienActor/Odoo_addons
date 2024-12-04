@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="requisition_order_search" model="ir.ui.view">
+        <field name="name">requisition.order.search</field>
+        <field name="model">requisition.order</field>
+        <field name="arch" type="xml">
+            <search string="Search_Group">
+                <field name="requisition_product_id"/>
+                <field name="product_id"/>
+                <field name="description"/>
+                <field name="partner_id"/>
+                <group expand="1" string="Group By">
+                    <filter string="By project" name="by_project"
+                            context="{'group_by': 'x_project_id'}"/>
+                    <filter string="By product" name="by_product"
+                            context="{'group_by': 'product_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="purchase_requisition_details_tree_custom" model="ir.ui.view">
+        <field name="name">purchase_requisition_details_tree</field>
+        <field name="model">requisition.order</field>
+        <field name="arch" type="xml">
+            <tree class='bkg_epr_rorder_tree' editable="bottom" decoration-danger="bkg_warning_qty_status=='late'" decoration-warning="bkg_warning_qty_status=='two_days_left'" default_order='id'>
+                <field name="create_date" invisible="True"/>
+                <field name="state" invisible="True"/>
+                <field name="bkg_rorder_order" string='No.'/>
+                <field name="requisition_type"
+                       attrs="{'invisible': [('state', '=', 'new')]}"
+                       groups="employee_purchase_requisition.employee_requisition_head,employee_purchase_requisition.employee_requisition_manager"/>
+                <field name="product_id"/>
+                <field name="description"/>
+                <field name="quantity"/>
+                <field name="bkg_received_qty" readonly="True" string="Received"/>
+                <field name="bkg_warning_qty_status" invisible="1"/>
+                <field name="uom" string="Unit"/>
+                <field name="partner_id"
+                       attrs="{'invisible': [('requisition_type', '=', 'internal_transfer')]}"
+                       groups="employee_purchase_requisition.employee_requisition_head,employee_purchase_requisition.employee_requisition_manager"/>
+            </tree>
+        </field>
+    </record>
+    
+    <record id="purchase_requisition_details_custom" model="ir.actions.act_window">
+        <field name="name">Purchase Requisition Details</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_id" ref="requisition_order_tree"></field>
+        <field name="res_model">requisition.order</field>
+        <field name="context">{"search_default_by_project":1, "search_default_by_product":1}</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new record!
+            </p>
+        </field>
+    </record>
+
+    
+    <menuitem id="purchase_requisition02"
+              name="Purchase Requisition Details"
+              parent="purchase_requisition"
+              action="employee_purchase_requisition.purchase_requisition_details_custom"/>
+
+</odoo>
